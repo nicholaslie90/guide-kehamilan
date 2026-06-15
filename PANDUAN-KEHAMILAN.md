@@ -5,7 +5,7 @@
 ---
 
 ## Daftar Isi
-0. [RSIA Mahati & dr. Christian Sp.OG (Tempat Anda Berencana)](#0-rsia-mahati--dr-christian-spog-tempat-anda-berencana)
+0. [Tempat Persalinan & dr. Christian Sp.OG (Mahati / Tzu Chi PIK)](#0-tempat-persalinan--dr-christian-spog-mahati--tzu-chi-pik)
 1. [Garis Besar Perjalanan Kehamilan (per Trimester)](#1-garis-besar-perjalanan-kehamilan-per-trimester)
 1B. [Yang Dirasakan Sang Ibu — Normal atau Tidak?](#1b-yang-dirasakan-sang-ibu--normal-atau-tidak)
 1C. [Kalender Kehamilan (Minggu demi Minggu)](#1c-kalender-kehamilan-minggu-demi-minggu)
@@ -24,37 +24,47 @@
 
 ---
 
-## 0. RSIA Mahati & dr. Christian Sp.OG (Tempat Anda Berencana)
+## 0. Tempat Persalinan & dr. Christian Sp.OG (Mahati / Tzu Chi PIK)
 
-Anda berencana dengan **dr. Christian Wijaya Woen, Sp.OG, FICS** — Dokter Spesialis Obstetri & Ginekologi di **RSIA Mahati**. Berikut info praktis yang relevan:
+Dokter Anda **dr. Christian Wijaya Woen, Sp.OG, FICS** praktik di **kedua** rumah sakit, jadi Anda bisa bersalin dengan dokter yang sama baik di **RSIA Mahati** maupun **RS Tzu Chi PIK**. Beliau juga praktisi **gentle birth / hypnobirthing**, serta menangani infertilitas dan ginekologi fungsional & estetik.
 
-### Info Rumah Sakit
+### Pilihan A — RSIA Mahati (RS Ibu & Anak, Jakarta Selatan)
 | | |
 |---|---|
-| **Nama** | RSIA Mahati (Rumah Sakit Ibu dan Anak) |
-| **Alamat** | Jl. Taman Alfa Indah Blok J1 No. 1 RT/RW 001/007, Kel. Petukangan Utara, Kec. Pesanggrahan, **Jakarta Selatan 12260** |
+| **Alamat** | Jl. Taman Alfa Indah Blok J1 No. 1 RT/RW 001/007, Petukangan Utara, Pesanggrahan, **Jakarta Selatan 12260** |
 | **Telepon / IGD** | (021) 38777168 |
 | **WhatsApp** | 0822-10777168 — [chat](https://wa.me/6282210777168) |
-| **Email** | info@mahati.id |
-| **Website** | [mahati.id](https://mahati.id) · Jadwal dokter: [mahati.id/schedule-board](https://mahati.id/schedule-board) · Buat janji: [mahati.id/dokter](https://mahati.id/dokter) |
+| **Email / Web** | info@mahati.id · [mahati.id](https://mahati.id) · [Buat janji](https://mahati.id/dokter) |
+| **Paket persalinan** | normal/caesar, kelas VIP/1/2 — [lihat halaman paket](https://mahati.id/promo/paket-harga-estimasi-persalinan) (harga tak dipublikasikan; konfirmasi via WA) |
+| **Sp.OG lain (pengganti)** | dr. Fadil Hidayat · dr. Jieni Hardiyanto · dr. Andri Hondir · dr. Egeunia Gantika · dr. Forry Fortuna |
 
-### Dokter Kandungan (Sp.OG) di RSIA Mahati
-- **dr. Christian Wijaya Woen, Sp.OG, FICS** ← dokter Anda
-- dr. Fadil Hidayat, Sp.OG · dr. Jieni Hardiyanto, Sp.OG · dr. Andri Hondir, Sp.OG · dr. Egeunia Gantika, Sp.OG · dr. Forry Fortuna, Sp.OG
-*(Berguna sebagai dokter pengganti bila dr. Christian berhalangan saat hari-H.)*
+### Pilihan B — RS Tzu Chi PIK (RS umum besar, Jakarta Utara)
+| | |
+|---|---|
+| **Alamat** | Jl. Boulevard, Pantai Indah Kapuk, Kamal Muara, Penjaringan, **Jakarta Utara 14470** |
+| **Call Center** | (021) 5095 0888 |
+| **IGD** | (021) 5095 0800 |
+| **WhatsApp** | 0811-160-195 — [chat](https://wa.me/62811160195) |
+| **Jadwal dr. Christian** | Selasa, Kamis, Jumat, Sabtu · 13.00–16.00 |
+| **Fasilitas** | Poli kebidanan 24 jam, ruang maternity & perinatal lengkap (perawatan bayi level 1/2A/2B) |
 
-### Paket Persalinan RSIA Mahati
-RSIA Mahati punya halaman **Paket Estimasi Persalinan**: [mahati.id/promo/paket-harga-estimasi-persalinan](https://mahati.id/promo/paket-harga-estimasi-persalinan). Paket mencakup **jenis persalinan (normal/caesar)**, **kelas kamar (VIP / Kelas 1 / Kelas 2)**, perlengkapan ibu & bayi, obat dasar, serta tindakan medis.
+### 🧭 Bagaimana Memilih di Antara Keduanya?
+- **Jarak & akses:** mana yang lebih dekat dari rumah/kantor, terutama saat kontraksi + macet Jakarta (Mahati di Jaksel, Tzu Chi di Jakut/PIK).
+- **BPJS / asuransi:** pastikan RS & metode ditanggung (cek faskes & rujukan BPJS; jaringan provider untuk asuransi swasta).
+- **Tingkat layanan bayi (NICU/Perina):** bila ada risiko/komplikasi, RS umum besar seperti **Tzu Chi PIK** punya fasilitas bayi lebih lengkap. **RSIA Mahati** lebih fokus & "homey" untuk kasus normal.
+- **Biaya & kelas kamar:** bandingkan estimasi paket kedua RS.
+- **Preferensi metode:** bila ingin **gentle birth/hypnobirthing**, tanyakan ketersediaan & fasilitasnya di masing-masing RS.
 
-> ⚠️ **Angka harga tidak ditampilkan publik di website** — angkanya berubah-ubah. **Konfirmasi langsung via WhatsApp 0822-10777168** untuk estimasi terbaru sesuai kelas kamar & metode. Tanyakan juga: apakah BPJS/asuransi Anda diterima di sini (cek faskes & sistem rujukan), serta apa yang TIDAK termasuk paket (mis. biaya bila ada komplikasi/NICU).
+> 💡 Banyak pasangan kontrol rutin di RS yang lebih dekat, lalu memfinalkan tempat persalinan di trimester 3 sesuai posisi janin & rencana metode. Diskusikan dengan dr. Christian.
 
 ### Pertanyaan yang Sebaiknya Ditanyakan ke dr. Christian
-- Berdasarkan kondisi saya, target persalinan **normal atau caesar**? Apa indikasinya?
-- Vitamin/suplemen apa yang beliau resepkan & dosisnya?
-- Jadwal kontrol & USG yang beliau sarankan + tes apa saja yang perlu.
-- Apakah RSIA Mahati mendukung **IMD, rooming-in, ASI eksklusif** sesuai birth plan saya?
-- Kalau hari-H beliau berhalangan, siapa dokter pengganti & bagaimana prosedurnya?
-- Estimasi biaya & cara pembayaran (cash/BPJS/asuransi/cicilan).
+- Untuk kondisi saya, lebih baik bersalin di **Mahati atau Tzu Chi PIK**? Pertimbangannya?
+- Target persalinan **normal atau caesar**? Apa indikasinya?
+- Apakah **gentle birth/hypnobirthing** memungkinkan untuk saya, & di RS mana?
+- Vitamin/suplemen yang diresepkan & dosisnya; jadwal kontrol & USG.
+- Apakah mendukung **IMD, rooming-in, ASI eksklusif** sesuai birth plan saya?
+- Kalau hari-H beliau berhalangan, siapa dokter pengganti di tiap RS?
+- Estimasi biaya & cara pembayaran (cash/BPJS/asuransi/cicilan) di kedua RS.
 
 ---
 
@@ -158,6 +168,8 @@ Sebagian besar perubahan tubuh saat hamil **normal**, dipicu lonjakan hormon (hC
 - Usia kehamilan dihitung dari **HPHT**, bukan dari tanggal pembuahan. Selalu konfirmasi dengan USG/dokter.
 
 > 📅 **Versi interaktif** ada di situs web: cukup masukkan tanggal HPHT, kalender otomatis menghitung HPL, usia kehamilan saat ini, sisa waktu, dan menyorot minggu Anda.
+>
+> **Tersetel untuk Anda:** HPHT = **11 Mei 2026** → pada **15 Juni 2026 usia kehamilan = 5 minggu**, dan **Perkiraan Lahir (HPL) = 15 Februari 2027**. (Ubah bila tanggal sebenarnya berbeda.)
 
 | Mg | Ukuran Janin | Perkembangan | Untuk Ibu |
 |---|---|---|---|
