@@ -210,9 +210,30 @@
   #calTable tr.now td:first-child{font-weight:800;color:var(--clay-deep)}
   #calTable td:first-child{white-space:nowrap;font-weight:700}
 
+  /* 3D simulation */
+  .sim3d{position:relative;width:100%;height:min(62vh,460px);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:radial-gradient(circle at 50% 38%,#83384a,#4d2330 68%,#2b141c);box-shadow:var(--shadow);touch-action:none;cursor:grab}
+  .sim3d:active{cursor:grabbing}
+  #sim3dCanvas{position:absolute;inset:0}
+  .sim3d canvas{display:block;width:100%!important;height:100%!important}
+  .sim3d-badge{position:absolute;top:12px;left:12px;background:rgba(20,8,12,.42);-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);color:#fff;padding:9px 14px;border-radius:13px;pointer-events:none}
+  .sim3d-badge .wk{font-family:'Fraunces';font-size:1.45rem;line-height:1;font-weight:600}
+  .sim3d-badge .sz{font-size:12px;color:var(--blush);margin-top:2px}
+  .sim3d-hint{position:absolute;bottom:10px;right:13px;color:rgba(255,255,255,.72);font-size:11px;font-weight:600;pointer-events:none}
+  .sim-controls{margin-top:16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .sim-controls button{background:var(--ink);color:var(--cream);border:none;padding:11px 18px;border-radius:999px;font-weight:800;cursor:pointer;font-family:'Mulish';font-size:14px}
+  .sim-wklabel{font-weight:800;min-width:82px;color:var(--clay-deep)}
+  #simWeek{flex:1;min-width:150px;accent-color:var(--clay);height:6px}
+  .sim-read{width:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:4px}
+  .sim-read .b{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+  .sim-read .b .l{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-soft);font-weight:800}
+  .sim-read .b .v{font-weight:700;margin-top:3px;font-size:15px}
+  .sim-dev{margin-top:12px}
+
   .sumlist{columns:2;column-gap:32px}
 
   @media (max-width:880px){
+    .sim3d{height:min(56vh,400px)}
+    .sim-read{grid-template-columns:1fr 1fr}
     .calc-grid{grid-template-columns:1fr 1fr}
     .layout{grid-template-columns:1fr;gap:0;padding-top:6px}
     .toc{display:none}
@@ -465,6 +486,28 @@
           <tbody id="calBody"></tbody>
         </table>
       </div>
+    </section>
+
+    <!-- 3D simulation -->
+    <section class="block reveal" id="simulasi3d">
+      <div class="sec-head"><span class="sec-num">04</span><h2>Simulasi 3D Perkembangan Janin</h2></div>
+      <p>Geser <strong>slider minggu</strong> atau tekan ▶ untuk melihat janin tumbuh di dalam rahim. Putar tampilan dengan jari/mouse. <span class="muted">Ilustrasi bergaya — bukan gambaran anatomi presisi; ukuran panjang/berat adalah perkiraan rata-rata.</span></p>
+      <div class="sim3d">
+        <div id="sim3dCanvas"></div>
+        <div class="sim3d-badge"><div class="wk" id="simBadgeWk">5 mg</div><div class="sz" id="simBadgeSz">0,3 cm · &lt; 1 g</div></div>
+        <div class="sim3d-hint">🖐️ seret untuk memutar</div>
+      </div>
+      <div class="sim-controls">
+        <button id="simPlay">▶ Putar</button>
+        <span class="sim-wklabel" id="simWklabel">Minggu 5</span>
+        <input type="range" id="simWeek" min="4" max="40" value="5" step="1" aria-label="Minggu kehamilan">
+      </div>
+      <div class="sim-read">
+        <div class="b"><div class="l">Panjang ±</div><div class="v" id="simLen">0,3 cm</div></div>
+        <div class="b"><div class="l">Berat ±</div><div class="v" id="simWt">&lt; 1 g</div></div>
+        <div class="b"><div class="l">Seukuran</div><div class="v" id="simSize">biji wijen</div></div>
+      </div>
+      <p class="sim-dev muted" id="simDev">Minggu 5: Tabung saraf &amp; bakal jantung terbentuk.</p>
     </section>
 
     <!-- 03 -->
@@ -908,6 +951,7 @@
     {w:39,s:'semangka mini',d:'"Full term" — siap lahir',m:'Waspada kontraksi teratur & ketuban pecah'},
     {w:40,s:'semangka kecil',d:'Perkiraan lahir (HPL)!',m:'Bila lewat HPL, dokter akan pantau lebih ketat'}
   ];
+  window.PREG_WEEKS=WEEKS;
   const DAY=864e5;
   const calBody=document.getElementById('calBody');
   const fmt=d=>d.toLocaleDateString('id-ID',{day:'numeric',month:'short',year:'numeric'});
@@ -944,6 +988,132 @@
   }
   document.getElementById('hpht').addEventListener('change',calc);
   calc();
+</script>
+
+<!-- 3D fetal development simulation -->
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+
+const WK=window.PREG_WEEKS||[];
+// [panjang cm, berat g] perkiraan per minggu
+const SIZE={4:[0.1,0],5:[0.3,0],6:[0.6,0],7:[1,0],8:[1.6,1],9:[2.3,2],10:[3.1,4],11:[4.1,7],12:[5.4,14],13:[7.4,23],14:[8.7,43],15:[10,70],16:[11.6,100],17:[13,140],18:[14.2,190],19:[15.3,240],20:[25.6,300],21:[26.7,360],22:[27.8,430],23:[28.9,501],24:[30,600],25:[34.6,660],26:[35.6,760],27:[36.6,875],28:[37.6,1005],29:[38.6,1153],30:[39.9,1319],31:[41.1,1502],32:[42.4,1702],33:[43.7,1918],34:[45,2146],35:[46.2,2383],36:[47.4,2622],37:[48.6,2859],38:[49.8,3083],39:[50.7,3288],40:[51.2,3462]};
+
+const $=id=>document.getElementById(id);
+const simWeek=$('simWeek'), simPlay=$('simPlay'), mount=$('sim3dCanvas');
+
+function fmtLen(cm){return (cm<1?cm:Math.round(cm*10)/10).toString().replace('.',',')+' cm';}
+function fmtWt(g){return g<1?'< 1 g':(g<1000?g+' g':(g/1000).toFixed(2).replace('.',',')+' kg');}
+
+let scene,camera,renderer,controls,baby,cord,skin,cordMat;
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const lerp=(a,b,t)=>a+(b-a)*t;
+const gsFor=w=>lerp(0.5,1.7,Math.pow(clamp((w-4)/36,0,1),0.65));
+
+function buildBaby(week){
+  const t=clamp((week-4)/36,0,1);
+  const g=new THREE.Group();
+  const torsoR=lerp(0.34,0.52,t), torsoLen=lerp(0.42,0.95,t), headR=lerp(0.42,0.5,t);
+  const limbR=lerp(0.10,0.17,t), armLen=lerp(0.28,0.82,t), legLen=lerp(0.30,1.0,t);
+  const torso=new THREE.Mesh(new THREE.SphereGeometry(1,28,28),skin);
+  torso.scale.set(torsoR,torsoLen,torsoR*0.9); g.add(torso);
+  const head=new THREE.Mesh(new THREE.SphereGeometry(headR,28,28),skin);
+  head.position.set(0,torsoLen*0.9+headR*0.45,0.06); g.add(head);
+  const limb=(len)=>new THREE.Mesh(new THREE.CapsuleGeometry(limbR,len,5,10),skin);
+  const aL=limb(armLen),aR=limb(armLen);
+  aL.position.set(-torsoR*0.7,torsoLen*0.35,0.24); aL.rotation.set(0.3,0,0.95);
+  aR.position.set(torsoR*0.7,torsoLen*0.35,0.24); aR.rotation.set(0.3,0,-0.95);
+  const lL=limb(legLen),lR=limb(legLen);
+  lL.position.set(-torsoR*0.45,-torsoLen*0.7,0.32); lL.rotation.set(-1.15,0,0.22);
+  lR.position.set(torsoR*0.45,-torsoLen*0.7,0.32); lR.rotation.set(-1.15,0,-0.22);
+  g.add(aL,aR,lL,lR);
+  g.rotation.z=0.16;
+  g.scale.setScalar(gsFor(week));
+  return g;
+}
+function buildCord(week){
+  if(cord){scene.remove(cord);cord.geometry.dispose();}
+  const gs=gsFor(week);
+  const curve=new THREE.CatmullRomCurve3([
+    new THREE.Vector3(0.18*gs,-0.05*gs,0.5*gs+0.05),
+    new THREE.Vector3(0.7,0.4,0.2),
+    new THREE.Vector3(0.5,1.1,-0.5),
+    new THREE.Vector3(0,1.7,-1.2)
+  ]);
+  cord=new THREE.Mesh(new THREE.TubeGeometry(curve,48,0.055,8,false),cordMat);
+  scene.add(cord);
+}
+
+function update(week){
+  week=Math.round(week);
+  const e=WK.find(x=>x.w===week)||{s:'—',d:'—'};
+  const sz=SIZE[week]||[0,0];
+  simWeek.value=week;
+  $('simWklabel').textContent='Minggu '+week;
+  $('simBadgeWk').textContent=week+' mg';
+  const L=fmtLen(sz[0]),Wt=fmtWt(sz[1]);
+  $('simLen').textContent=L; $('simWt').textContent=Wt; $('simSize').textContent=e.s;
+  $('simBadgeSz').textContent=L+' · '+Wt;
+  $('simDev').textContent='Minggu '+week+': '+e.d+'.';
+  if(scene){
+    if(baby){scene.remove(baby);baby.traverse(o=>{if(o.geometry)o.geometry.dispose();});}
+    baby=buildBaby(week); scene.add(baby);
+    buildCord(week);
+  }
+}
+
+let playing=false,last=0,acc=0;
+function loop(t){
+  requestAnimationFrame(loop);
+  const dt=(t-last)/1000; last=t;
+  if(playing){acc+=dt; if(acc>0.5){acc=0; let w=parseInt(simWeek.value)+1; if(w>40)w=4; update(w);}}
+  if(controls)controls.update();
+  if(renderer)renderer.render(scene,camera);
+}
+function resize(){
+  if(!renderer)return;
+  const w=mount.clientWidth||320,h=mount.clientHeight||320;
+  renderer.setSize(w,h,false); camera.aspect=w/h; camera.updateProjectionMatrix();
+}
+
+try{
+  renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});
+  renderer.setPixelRatio(Math.min(devicePixelRatio||1,2));
+  mount.appendChild(renderer.domElement);
+  scene=new THREE.Scene();
+  camera=new THREE.PerspectiveCamera(45,1,0.1,100); camera.position.set(0.5,0.3,7);
+  controls=new OrbitControls(camera,renderer.domElement);
+  controls.enableDamping=true; controls.enablePan=false; controls.autoRotate=true;
+  controls.autoRotateSpeed=0.7; controls.minDistance=4; controls.maxDistance=11;
+  scene.add(new THREE.HemisphereLight(0xffd9c7,0x40121f,1.2));
+  const key=new THREE.PointLight(0xfff0e6,42,40); key.position.set(4,5,6); scene.add(key);
+  const rim=new THREE.PointLight(0xff8a9b,26,40); rim.position.set(-5,-2,-3); scene.add(rim);
+  skin=new THREE.MeshStandardMaterial({color:0xeab69c,roughness:0.92,emissive:0x6b2a1e,emissiveIntensity:0.07});
+  cordMat=new THREE.MeshStandardMaterial({color:0xcf6274,roughness:0.85});
+  // womb (translucent shell + glow)
+  scene.add(new THREE.Mesh(new THREE.SphereGeometry(2.7,48,48),
+    new THREE.MeshStandardMaterial({color:0x8a2f43,transparent:true,opacity:0.16,side:THREE.BackSide,roughness:0.6})));
+  scene.add(new THREE.Mesh(new THREE.SphereGeometry(2.71,40,40),
+    new THREE.MeshBasicMaterial({color:0xff6e85,transparent:true,opacity:0.05,side:THREE.BackSide})));
+  // placenta on womb wall
+  const pl=new THREE.Mesh(new THREE.SphereGeometry(0.85,28,28),
+    new THREE.MeshStandardMaterial({color:0x6e1f2c,roughness:0.95}));
+  pl.scale.set(1,1,0.32); pl.position.set(0,1.95,-1.35); pl.lookAt(0,0,0); scene.add(pl);
+  resize();
+  requestAnimationFrame(loop);
+  addEventListener('resize',resize);
+  // recover size once layout/reveal settles
+  setTimeout(resize,300);
+}catch(err){
+  mount.innerHTML='<div style="display:flex;align-items:center;justify-content:center;height:100%;padding:24px;color:#fff;text-align:center;font-weight:600">Simulasi 3D butuh WebGL. Coba buka di browser lain (mis. Chrome/Safari terbaru). Data ukuran tetap tampil di bawah.</div>';
+}
+
+simWeek.addEventListener('input',()=>{playing=false;simPlay.textContent='▶ Putar';update(parseInt(simWeek.value));});
+simPlay.addEventListener('click',()=>{playing=!playing;simPlay.textContent=playing?'⏸ Jeda':'▶ Putar';});
+update(5);
 </script>
 </body>
 </html>
