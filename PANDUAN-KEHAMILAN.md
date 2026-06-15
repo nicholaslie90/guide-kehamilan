@@ -7,6 +7,8 @@
 ## Daftar Isi
 0. [RSIA Mahati & dr. Christian Sp.OG (Tempat Anda Berencana)](#0-rsia-mahati--dr-christian-spog-tempat-anda-berencana)
 1. [Garis Besar Perjalanan Kehamilan (per Trimester)](#1-garis-besar-perjalanan-kehamilan-per-trimester)
+1B. [Yang Dirasakan Sang Ibu — Normal atau Tidak?](#1b-yang-dirasakan-sang-ibu--normal-atau-tidak)
+1C. [Kalender Kehamilan (Minggu demi Minggu)](#1c-kalender-kehamilan-minggu-demi-minggu)
 2. [Yang WAJIB Dilakukan (Checklist Inti)](#2-yang-wajib-dilakukan-checklist-inti)
 3. [Pemeriksaan & Jadwal Kontrol (ANC)](#3-pemeriksaan--jadwal-kontrol-anc)
 4. [Nutrisi: Yang Boleh & Tidak Boleh Dikonsumsi](#4-nutrisi-yang-boleh--tidak-boleh-dikonsumsi)
@@ -72,6 +74,130 @@ Kehamilan ± **40 minggu (9 bulan)**, dibagi 3 trimester.
 ### Trimester 3 (Minggu 28–40) — "Persiapan Lahir"
 - Perut besar, sesak, nyeri punggung, kaki bengkak, sulit tidur, kontraksi palsu (Braxton Hicks).
 - **Fokus:** finalisasi hospital bag, birth plan, pantau gerakan janin, kontrol makin sering, siapkan mental persalinan.
+
+---
+
+## 1B. Yang Dirasakan Sang Ibu — Normal atau Tidak?
+
+Sebagian besar perubahan tubuh saat hamil **normal**, dipicu lonjakan hormon (hCG, progesteron, estrogen, relaxin) dan naiknya volume darah. Bagian ini membantu membedakan mana yang **wajar** dan mana yang **perlu diperiksakan**.
+
+> 🧭 **Pegangan umum:** gejala yang muncul perlahan, hilang-timbul, dan membaik dengan istirahat → biasanya **normal**. Gejala yang **mendadak, hebat, menetap**, atau disertai **demam / perdarahan / bengkak wajah / pandangan kabur / gerakan janin berkurang** → **SEGERA periksa** (lihat [Tanda Bahaya](#6-tanda-bahaya--kapan-harus-ke-dokter-segera)).
+
+### Garis waktu perasaan umum
+| Trimester | Yang umum dirasakan |
+|---|---|
+| **1 (1–13 mg)** | Mual-muntah, lelah berat, ngantuk, payudara nyeri, sering BAK, mood naik-turun, indera penciuman tajam, mulut terasa logam |
+| **2 (14–27 mg)** | Keluhan mereda, energi naik, nafsu makan kembali, perut & payudara membesar, mulai terasa gerakan janin, kulit/perut menggelap (linea nigra) |
+| **3 (28–40 mg)** | Sesak, heartburn, nyeri punggung & panggul, kaki bengkak, susah tidur, kontraksi palsu (Braxton Hicks), keluar kolostrum |
+
+### Per Sistem Tubuh — Normal vs Perhatikan
+
+**🌡️ Suhu tubuh & rasa gerah**
+- ✅ *Normal:* suhu basal sedikit naik (±0,3–0,5°C), sering merasa gerah & berkeringat, tangan-kaki hangat (metabolisme & aliran darah naik), mudah kepanasan.
+- ⚠️ *Perhatikan:* demam >38°C (apalagi + menggigil/nyeri) → bisa infeksi. Hindari kepanasan ekstrem/sauna.
+
+**🍽️ Nafsu makan, ngidam & mual**
+- ✅ *Normal:* mual-muntah trimester 1 (bisa kapan saja, bukan hanya pagi), nafsu makan turun lalu naik di trimester 2, ngidam & menolak makanan/bau tertentu.
+- ⚠️ *Perhatikan:* muntah hebat terus-menerus tak bisa makan/minum + BB turun + lemas + urine pekat (**hyperemesis gravidarum**); ngidam benda non-makanan seperti es batu berlebihan/tanah/kapur (**pica** — bisa tanda anemia).
+
+**🔥 Pencernaan (maag, sembelit, kembung)**
+- ✅ *Normal:* asam lambung naik (heartburn) terutama trimester akhir, sembelit & kembung (progesteron melambatkan usus), sering sendawa/kentut, wasir.
+- ⚠️ *Perhatikan:* nyeri ulu hati hebat + sakit kepala + pandangan kabur (bisa **preeklamsia**), BAB berdarah banyak.
+
+**🤱 Payudara**
+- ✅ *Normal:* membesar, nyeri/sensitif, puting & areola menggelap & membesar, urat tampak, muncul bintik kecil (kelenjar Montgomery), keluar **kolostrum** (cairan kekuningan) di trimester akhir.
+- ⚠️ *Perhatikan:* benjolan keras menetap, kemerahan + nyeri + demam (mastitis), keluar darah dari puting.
+
+**✨ Kulit & rambut**
+- ✅ *Normal:* garis gelap di perut (**linea nigra**), flek/menggelap di wajah (**melasma**), **stretch mark** (kemerahan/keunguan), "pregnancy glow", jerawat, kulit lebih kering/berminyak, rambut terasa lebih tebal (rontok justru *setelah* melahirkan), telapak tangan kemerahan.
+- ⚠️ *Perhatikan:* **gatal hebat tanpa ruam** terutama di telapak tangan/kaki di trimester akhir (bisa **kolestasis kehamilan**) → ke dokter.
+
+**🔋 Energi, kelelahan & tidur**
+- ✅ *Normal:* sangat lelah/ngantuk trimester 1, membaik trimester 2, susah tidur & sering terbangun trimester 3 (perut besar, sering BAK, kram), mimpi lebih hidup.
+- ⚠️ *Perhatikan:* lelah ekstrem + pucat + jantung berdebar + sesak (bisa **anemia berat**).
+
+**😢 Mood, emosi & "pregnancy brain"**
+- ✅ *Normal:* mood naik-turun, mudah menangis/sensitif, cemas ringan, pelupa & sulit fokus ("kabut otak").
+- ⚠️ *Perhatikan:* sedih/cemas berkepanjangan, kehilangan minat, sulit menjalani hari, atau pikiran menyakiti diri → cari bantuan profesional.
+
+**🚽 Berkemih & ginjal**
+- ✅ *Normal:* sering ingin BAK (rahim menekan kandung kemih) terutama trimester 1 & 3; kadang sedikit "ngompol" saat batuk/bersin di trimester akhir.
+- ⚠️ *Perhatikan:* nyeri/panas saat BAK, anyang-anyangan, urine keruh/berbau + demam/nyeri pinggang (**ISK** — berbahaya bila tak diobati saat hamil).
+
+**🩸 Sirkulasi & pembuluh darah**
+- ✅ *Normal:* pusing/melayang (tensi cenderung turun di awal), hidung mampet/mimisan ringan, gusi mudah berdarah, varises, wasir, jantung berdebar lebih cepat, bengkak ringan di kaki sore hari (membaik setelah istirahat/angkat kaki).
+- ⚠️ *Perhatikan:* bengkak mendadak di **wajah/tangan** + sakit kepala hebat + pandangan kabur + tensi tinggi (**preeklamsia**); pingsan; sesak/nyeri dada; bengkak **hanya satu kaki** + nyeri + kemerahan (**DVT/gumpalan darah**).
+
+**🦴 Otot, sendi & tulang**
+- ✅ *Normal:* nyeri punggung bawah, nyeri panggul & tulang kemaluan (relaxin melonggarkan sendi), nyeri menusuk di samping perut bawah saat bergerak (**nyeri ligamen bundar**), kram kaki malam hari, kesemutan tangan (carpal tunnel).
+- ⚠️ *Perhatikan:* kram perut hebat & **teratur sebelum 37 minggu** (bisa kontraksi prematur), nyeri panggul sampai sulit berjalan.
+
+**💧 Keputihan (discharge)**
+- ✅ *Normal:* bening/putih susu, encer, tidak berbau menyengat, jumlahnya lebih banyak dari biasanya.
+- ⚠️ *Perhatikan:* gatal, berbau busuk, kuning-kehijauan, menggumpal seperti keju (infeksi); cairan bening **membanjir/merembes terus** (mungkin ketuban pecah); keluar **darah**.
+
+**🤰 Kontraksi: Braxton Hicks vs Asli**
+- ✅ *Normal (palsu/Braxton Hicks):* perut mengencang sesaat, **tidak teratur**, tidak makin sering/kuat, hilang saat istirahat/ganti posisi/minum.
+- ⚠️ *Asli/persalinan:* **teratur & makin sering**, makin kuat & lama, tidak hilang dengan istirahat, bisa + lendir darah/ketuban. Bila **<37 minggu → segera ke RS** (prematur).
+
+**⚖️ Berat badan & bentuk tubuh**
+- ✅ *Normal:* BB naik bertahap (total ±11–16 kg untuk BMI normal), perut & payudara membesar, pusar bisa "keluar", keseimbangan sedikit terganggu.
+- ⚠️ *Perhatikan:* kenaikan BB sangat cepat + bengkak (preeklamsia), atau BB tidak naik / malah turun.
+
+**👣 Gerakan janin & libido**
+- ✅ *Normal:* gerakan janin mulai terasa ±mg 18–22, makin kuat & berpola di trimester 3. Libido bisa naik atau turun — keduanya normal; hubungan intim umumnya aman bila tak ada larangan dokter.
+- ⚠️ *Perhatikan:* **gerakan janin berkurang drastis/berhenti** di trimester 3 → segera periksa; perdarahan/nyeri setelah berhubungan.
+
+---
+
+## 1C. Kalender Kehamilan (Minggu demi Minggu)
+
+**Cara hitung Perkiraan Lahir (HPL/EDD) — metode Naegele:**
+- **HPL = HPHT + 280 hari (40 minggu).** (HPHT = Hari Pertama Haid Terakhir.)
+- Cara cepat: **(HPHT − 3 bulan) + 7 hari + 1 tahun.**
+- Usia kehamilan dihitung dari **HPHT**, bukan dari tanggal pembuahan. Selalu konfirmasi dengan USG/dokter.
+
+> 📅 **Versi interaktif** ada di situs web: cukup masukkan tanggal HPHT, kalender otomatis menghitung HPL, usia kehamilan saat ini, sisa waktu, dan menyorot minggu Anda.
+
+| Mg | Ukuran Janin | Perkembangan | Untuk Ibu |
+|---|---|---|---|
+| 4 | biji poppy | Embrio menempel di dinding rahim | Test pack positif; mulai/teruskan asam folat, stop rokok & alkohol |
+| 5 | biji wijen | Tabung saraf & bakal jantung terbentuk | Mual mungkin mulai; jadwalkan kontrol pertama |
+| 6 | biji lentil | Detak jantung mulai; tunas tangan & kaki | Morning sickness & payudara nyeri; makan porsi kecil |
+| 7 | blueberry | Otak & wajah berkembang pesat | Sering BAK & lelah; cukupi cairan |
+| 8 | raspberry | Semua organ dasar terbentuk; jari mulai tampak | USG pertama biasanya tampak detak jantung |
+| 9 | buah ceri | Embrio resmi menjadi janin; gerak halus | Emosi naik-turun; jaga pola makan |
+| 10 | stroberi | Organ vital mulai berfungsi; kuku tumbuh | NIPT bisa dilakukan sejak minggu ini |
+| 11 | buah ara | Tulang mengeras; janin bisa menelan | Mual mulai mereda sebagian |
+| 12 | jeruk nipis | Refleks muncul; akhir periode paling kritis | USG; risiko keguguran menurun |
+| 13 | lemon | Sidik jari terbentuk; masuk trimester 2 | Energi mulai membaik |
+| 14 | buah persik | Bisa berekspresi & menggerakkan wajah | Nafsu makan kembali; siapkan baju hamil |
+| 15 | apel | "Menghirup" cairan ketuban; tulang menguat | Kulit lebih sensitif (waspada melasma) |
+| 16 | alpukat | Mulai bisa mendengar suara; makin aktif | Mungkin mulai terasa gerakan halus |
+| 17 | buah pir | Lemak tubuh mulai terbentuk | Nyeri ligamen bundar bisa muncul |
+| 18 | paprika | Sistem saraf matang | USG anomali (18–22 mg); sering tahu jenis kelamin |
+| 19 | tomat besar | Lapisan vernix melindungi kulit | Pusing & kram kaki bisa muncul |
+| 20 | pisang | Setengah jalan! Rambut & kuku tumbuh | Gerakan janin makin terasa jelas |
+| 21 | wortel | Aktif menendang; alis terbentuk | Jaga asupan zat besi |
+| 22 | pepaya kecil | Indra berkembang; bisa pegang tali pusat | Perut makin terlihat |
+| 23 | mangga | Paru berkembang; pendengaran tajam | Bengkak ringan kaki bisa mulai |
+| 24 | jagung manis | Batas viabilitas; wajah hampir lengkap | Tes gula darah (24–28 mg) |
+| 25 | kembang kol | Lemak bertambah; kulit mengencang | Nyeri punggung; perbaiki postur |
+| 26 | daun bawang | Mata mulai membuka; merespons cahaya | Tensi dipantau; waspada preeklamsia |
+| 27 | bunga kol besar | Akhir trimester 2; pola tidur terbentuk | Mulai kelas prenatal & edukasi laktasi |
+| 28 | terong | Masuk trimester 3; otak tumbuh pesat | Kontrol tiap 2 minggu; vaksin Tdap |
+| 29 | labu butternut | Tulang menguat; butuh kalsium | Sesak & heartburn bisa meningkat |
+| 30 | kubis besar | Mata bisa buka-tutup; ketuban berkurang | Mulai hitung gerakan janin |
+| 31 | kelapa | Berat badan bertambah pesat | Braxton Hicks bisa mulai terasa |
+| 32 | jicama | Posisi mulai menetap (idealnya kepala di bawah) | Cek posisi janin lewat USG |
+| 33 | nanas | Sistem imun berkembang; tengkorak masih lunak | Susah tidur; tidur miring kiri |
+| 34 | melon cantaloupe | Paru hampir matang | Susun birth plan & mulai hospital bag |
+| 35 | melon honeydew | Berat naik cepat; ginjal matang | Finalisasi hospital bag (siap mg 36) |
+| 36 | selada romaine | "Late preterm"; kepala turun ke panggul | Kontrol tiap minggu mulai sekarang |
+| 37 | daun bawang besar | "Early term" (cukup bulan dini) | Pantau tanda-tanda persalinan |
+| 38 | daun prei | Organ matang; lanugo mulai rontok | Pastikan tas & dokumen siap |
+| 39 | semangka mini | "Full term" — siap lahir | Waspada kontraksi teratur & ketuban pecah |
+| 40 | semangka kecil | Perkiraan lahir (HPL)! | Bila lewat HPL, dokter akan pantau lebih ketat |
 
 ---
 

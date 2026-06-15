@@ -2,7 +2,7 @@
 
 Website panduan kehamilan untuk calon orang tua (pemula total) — mobile-friendly, dipublikasikan via **GitHub Pages**.
 
-🔗 **Live site:** akan tersedia di `https://nic-ev.github.io/guide-kehamilan/` setelah GitHub Pages aktif.
+🔗 **Live site:** `https://nicholaslie90.github.io/guide-kehamilan/` (setelah GitHub Pages aktif).
 
 ## Isi
 - Perjalanan kehamilan per trimester

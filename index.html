@@ -184,7 +184,26 @@
   .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
   .reveal.in{opacity:1;transform:none}
 
+  /* calendar / calculator */
+  .calc{background:linear-gradient(135deg,var(--ink),#4a3d34);color:var(--cream);border-radius:var(--radius);padding:24px;margin:18px 0;box-shadow:var(--shadow)}
+  .calc label{display:block;font-weight:800;font-size:14px;margin-bottom:10px;color:var(--blush)}
+  .calc input[type=date]{font-family:'Mulish';font-size:16px;font-weight:600;padding:12px 14px;border-radius:12px;border:none;background:var(--cream);color:var(--ink);width:100%;max-width:300px}
+  .calc-out{display:none;margin-top:22px}
+  .calc-out.show{display:block;animation:rise .5s ease}
+  .calc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+  .calc-stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:15px}
+  .calc-stat .n{font-family:'Fraunces';font-size:1.55rem;color:#fff;line-height:1.05}
+  .calc-stat .l{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--blush);margin-top:7px;font-weight:700}
+  .bar{height:13px;background:rgba(255,255,255,.16);border-radius:999px;overflow:hidden}
+  .bar>span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blush),var(--clay),var(--gold));border-radius:999px;transition:width .9s cubic-bezier(.2,.7,.2,1)}
+  .tri-tag{display:inline-block;font-size:11px;font-weight:800;padding:3px 9px;border-radius:999px;text-transform:uppercase;letter-spacing:.04em}
+  .tri1{background:#FCE3D6;color:#A8543A}.tri2{background:#E9F0E3;color:#5F7256}.tri3{background:#FBF0DC;color:#9a6f12}
+  #calTable tr.now{background:var(--warn-bg)!important;box-shadow:inset 4px 0 0 var(--clay)}
+  #calTable tr.now td:first-child{font-weight:800;color:var(--clay-deep)}
+  #calTable td:first-child{white-space:nowrap;font-weight:700}
+
   @media (max-width:880px){
+    .calc-grid{grid-template-columns:1fr 1fr}
     .layout{grid-template-columns:1fr;gap:0;padding-top:6px}
     .toc{display:none}
     .grid2,.grid3,.contact{grid-template-columns:1fr}
@@ -302,9 +321,117 @@
       </div>
     </section>
 
-    <!-- 2 -->
+    <!-- 02 -->
+    <section class="block reveal" id="dirasakan">
+      <div class="sec-head"><span class="sec-num">02</span><h2>Yang Dirasakan Sang Ibu — Normal atau Tidak?</h2></div>
+      <p>Sebagian besar perubahan tubuh saat hamil <strong>normal</strong>, dipicu lonjakan hormon (hCG, progesteron, estrogen, relaxin) dan naiknya volume darah. Bagian ini membantu Anda membedakan mana yang <strong>wajar</strong> dan mana yang <strong>perlu diperiksakan</strong>.</p>
+      <div class="callout tip">
+        <p class="t">🧭 Pegangan umum</p>
+        <p>Gejala yang muncul <strong>perlahan, hilang-timbul, membaik dengan istirahat</strong> → biasanya normal. Gejala yang <strong>mendadak, hebat, menetap</strong>, atau disertai <strong>demam / perdarahan / bengkak wajah / pandangan kabur / gerakan janin berkurang</strong> → <strong>segera periksa</strong> (lihat <a href="#bahaya">Tanda Bahaya</a>).</p>
+      </div>
+
+      <h3>Garis waktu perasaan umum</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Trimester</th><th>Yang umum dirasakan</th></tr></thead>
+          <tbody>
+            <tr><td><strong>1</strong><br><span class="muted">1–13 mg</span></td><td>Mual-muntah, lelah berat, ngantuk, payudara nyeri, sering BAK, mood naik-turun, penciuman tajam, mulut terasa logam</td></tr>
+            <tr><td><strong>2</strong><br><span class="muted">14–27 mg</span></td><td>Keluhan mereda, energi naik, nafsu makan kembali, perut & payudara membesar, mulai terasa gerakan janin, kulit menggelap (linea nigra)</td></tr>
+            <tr><td><strong>3</strong><br><span class="muted">28–40 mg</span></td><td>Sesak, heartburn, nyeri punggung & panggul, kaki bengkak, susah tidur, kontraksi palsu (Braxton Hicks), keluar kolostrum</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Per Sistem Tubuh — Normal vs Perhatikan</h3>
+      <div class="grid2">
+        <div class="card"><h4 style="margin-top:0">🌡️ Suhu Tubuh & Rasa Gerah</h4>
+          <p><strong style="color:var(--sage-deep)">Normal:</strong> suhu basal naik sedikit (±0,3–0,5°C), sering gerah & berkeringat, tangan-kaki hangat (metabolisme & aliran darah naik), mudah kepanasan.</p>
+          <p><strong style="color:var(--danger)">⚠️ Perhatikan:</strong> demam &gt;38°C (apalagi + menggigil/nyeri) → bisa infeksi. Hindari kepanasan ekstrem/sauna.</p></div>
+
+        <div class="card"><h4 style="margin-top:0">🍽️ Nafsu Makan, Ngidam & Mual</h4>
+          <p><strong style="color:var(--sage-deep)">Normal:</strong> mual-muntah trimester 1 (bisa kapan saja), nafsu makan turun lalu naik di trimester 2, ngidam & menolak makanan/bau tertentu.</p>
+          <p><strong style="color:var(--danger)">⚠️ Perhatikan:</strong> muntah hebat tak bisa makan/minum + BB turun + lemas (<em>hyperemesis</em>); ngidam non-makanan (es/tanah/kapur = <em>pica</em>, bisa tanda anemia).</p></div>
+
+        <div class="card"><h4 style="margin-top:0">🔥 Pencernaan (Maag, Sembelit, Kembung)</h4>
+          <p><strong style="color:var(--sage-deep)">Normal:</strong> asam lambung naik (heartburn) terutama trimester akhir, sembelit & kembung (usus melambat), sering sendawa/kentut, wasir.</p>
+          <p><strong style="color:var(--danger)">⚠️ Perhatikan:</strong> nyeri ulu hati hebat + sakit kepala + pandangan kabur (bisa <em>preeklamsia</em>), BAB berdarah banyak.</p></div>
+
+        <div class="card"><h4 style="margin-top:0">🤱 Payudara</h4>
+          <p><strong style="color:var(--sage-deep)">Normal:</strong> membesar, nyeri/sensitif, puting & areola menggelap, urat tampak, bintik kecil (kelenjar Montgomery), keluar <em>kolostrum</em> kekuningan di trimester akhir.</p>
+          <p><strong style="color:var(--danger)">⚠️ Perhatikan:</strong> benjolan keras menetap, kemerahan + nyeri + demam (mastitis), keluar darah dari puting.</p></div>
+
+        <div class="card"><h4 style="margin-top:0">✨ Kulit & Rambut</h4>
+          <p><strong style="color:var(--sage-deep)">Normal:</strong> garis gelap di perut (linea nigra), flek wajah (melasma), stretch mark, "glow", jerawat, rambut terasa tebal (rontok justru setelah lahir), telapak tangan kemerahan.</p>
+          <p><strong style="color:var(--danger)">⚠️ Perhatikan:</strong> <strong>gatal hebat tanpa ruam</strong> di telapak tangan/kaki trimester akhir (bisa <em>kolestasis kehamilan</em>) → ke dokter.</p></div>
+
+        <div class="card"><h4 style="margin-top:0">🔋 Energi, Kelelahan & Tidur</h4>
+          <p><strong style="color:var(--sage-deep)">Normal:</strong> sangat lelah trimester 1, membaik trimester 2, susah tidur & sering terbangun trimester 3, mimpi lebih hidup.</p>
+          <p><strong style="color:var(--danger)">⚠️ Perhatikan:</strong> lelah ekstrem + pucat + jantung berdebar + sesak (bisa <em>anemia berat</em>).</p></div>
+
+        <div class="card"><h4 style="margin-top:0">😢 Mood & "Pregnancy Brain"</h4>
+          <p><strong style="color:var(--sage-deep)">Normal:</strong> mood naik-turun, mudah menangis/sensitif, cemas ringan, pelupa & sulit fokus ("kabut otak").</p>
+          <p><strong style="color:var(--danger)">⚠️ Perhatikan:</strong> sedih/cemas berkepanjangan, kehilangan minat, sulit menjalani hari, atau pikiran menyakiti diri → cari bantuan profesional.</p></div>
+
+        <div class="card"><h4 style="margin-top:0">🚽 Berkemih & Ginjal</h4>
+          <p><strong style="color:var(--sage-deep)">Normal:</strong> sering ingin BAK (rahim menekan kandung kemih) terutama trimester 1 & 3; kadang sedikit bocor saat batuk/bersin di trimester akhir.</p>
+          <p><strong style="color:var(--danger)">⚠️ Perhatikan:</strong> nyeri/panas saat BAK, anyang-anyangan, urine keruh/berbau + demam/nyeri pinggang (<em>ISK</em> — berbahaya bila dibiarkan).</p></div>
+
+        <div class="card"><h4 style="margin-top:0">🩸 Sirkulasi & Pembuluh Darah</h4>
+          <p><strong style="color:var(--sage-deep)">Normal:</strong> pusing/melayang (tensi turun di awal), hidung mampet/mimisan ringan, gusi mudah berdarah, varises, wasir, jantung berdebar, bengkak ringan kaki sore hari (membaik setelah istirahat).</p>
+          <p><strong style="color:var(--danger)">⚠️ Perhatikan:</strong> bengkak mendadak <strong>wajah/tangan</strong> + sakit kepala hebat + pandangan kabur + tensi tinggi (<em>preeklamsia</em>); pingsan; sesak/nyeri dada; bengkak <strong>satu kaki</strong> + nyeri + merah (<em>DVT</em>).</p></div>
+
+        <div class="card"><h4 style="margin-top:0">🦴 Otot, Sendi & Tulang</h4>
+          <p><strong style="color:var(--sage-deep)">Normal:</strong> nyeri punggung bawah, nyeri panggul & tulang kemaluan (relaxin), nyeri menusuk di samping perut bawah saat bergerak (ligamen bundar), kram kaki malam, kesemutan tangan.</p>
+          <p><strong style="color:var(--danger)">⚠️ Perhatikan:</strong> kram perut hebat & <strong>teratur sebelum 37 minggu</strong> (kontraksi prematur), nyeri panggul sampai sulit berjalan.</p></div>
+
+        <div class="card"><h4 style="margin-top:0">💧 Keputihan (Discharge)</h4>
+          <p><strong style="color:var(--sage-deep)">Normal:</strong> bening/putih susu, encer, tidak berbau menyengat, jumlahnya lebih banyak dari biasa.</p>
+          <p><strong style="color:var(--danger)">⚠️ Perhatikan:</strong> gatal, bau busuk, kuning-kehijauan, menggumpal seperti keju (infeksi); cairan bening <strong>membanjir/merembes terus</strong> (mungkin ketuban pecah); keluar <strong>darah</strong>.</p></div>
+
+        <div class="card"><h4 style="margin-top:0">🤰 Kontraksi: Palsu vs Asli</h4>
+          <p><strong style="color:var(--sage-deep)">Normal (Braxton Hicks):</strong> perut mengencang sesaat, <strong>tidak teratur</strong>, tidak makin kuat, hilang saat istirahat/ganti posisi/minum.</p>
+          <p><strong style="color:var(--danger)">⚠️ Asli/persalinan:</strong> <strong>teratur & makin sering</strong>, makin kuat & lama, tak hilang dengan istirahat, bisa + lendir darah/ketuban. Bila <strong>&lt;37 mg → segera ke RS</strong>.</p></div>
+
+        <div class="card"><h4 style="margin-top:0">⚖️ Berat Badan & Bentuk Tubuh</h4>
+          <p><strong style="color:var(--sage-deep)">Normal:</strong> BB naik bertahap (total ±11–16 kg untuk BMI normal), perut & payudara membesar, pusar bisa "keluar", keseimbangan sedikit terganggu.</p>
+          <p><strong style="color:var(--danger)">⚠️ Perhatikan:</strong> kenaikan BB sangat cepat + bengkak (preeklamsia), atau BB tidak naik / malah turun.</p></div>
+
+        <div class="card"><h4 style="margin-top:0">👣 Gerakan Janin & Libido</h4>
+          <p><strong style="color:var(--sage-deep)">Normal:</strong> gerakan janin terasa ±mg 18–22, makin kuat & berpola di trimester 3. Libido bisa naik atau turun — keduanya normal; intim umumnya aman bila tak ada larangan dokter.</p>
+          <p><strong style="color:var(--danger)">⚠️ Perhatikan:</strong> <strong>gerakan janin berkurang drastis/berhenti</strong> di trimester 3 → segera periksa; perdarahan/nyeri setelah berhubungan.</p></div>
+      </div>
+    </section>
+
+    <!-- calendar -->
+    <section class="block reveal" id="kalender">
+      <div class="sec-head"><span class="sec-num">03</span><h2>Kalender Kehamilan</h2></div>
+      <p>Masukkan <strong>tanggal HPHT</strong> (Hari Pertama Haid Terakhir) untuk menghitung perkiraan lahir, usia kehamilan saat ini, sisa waktu, dan menyorot minggu Anda. <span class="muted">(Metode Naegele — tetap konfirmasi dengan USG/dokter.)</span></p>
+      <div class="calc">
+        <label for="hpht">📅 Tanggal HPHT — hari pertama menstruasi terakhir</label>
+        <input type="date" id="hpht">
+        <div class="calc-out" id="calcOut">
+          <div class="calc-grid">
+            <div class="calc-stat"><div class="n" id="stWeek">–</div><div class="l">Usia Kehamilan</div></div>
+            <div class="calc-stat"><div class="n" id="stTri">–</div><div class="l">Trimester</div></div>
+            <div class="calc-stat"><div class="n" id="stEdd" style="font-size:1.15rem">–</div><div class="l">Perkiraan Lahir</div></div>
+            <div class="calc-stat"><div class="n" id="stLeft">–</div><div class="l">Sisa Waktu</div></div>
+          </div>
+          <div class="bar"><span id="calcBar"></span></div>
+        </div>
+      </div>
+      <h3>Minggu demi Minggu</h3>
+      <p class="muted" id="calHint">Ukuran janin (analogi), perkembangan utama, dan catatan untuk ibu. Isi HPHT di atas untuk menyorot minggu Anda saat ini &amp; menampilkan tanggalnya.</p>
+      <div class="table-wrap">
+        <table id="calTable">
+          <thead><tr><th>Mg</th><th>Tanggal</th><th>Ukuran</th><th>Perkembangan</th><th>Untuk Ibu</th></tr></thead>
+          <tbody id="calBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 03 -->
     <section class="block reveal" id="wajib">
-      <div class="sec-head"><span class="sec-num">02</span><h2>Yang WAJIB Dilakukan</h2></div>
+      <div class="sec-head"><span class="sec-num">03</span><h2>Yang WAJIB Dilakukan</h2></div>
       <div class="card">
         <ul class="do">
           <li><strong>Asam Folat 400–600 mcg/hari</strong> — sejak program hamil s/d minggu ke-12. Mencegah cacat tabung saraf. Paling krusial.</li>
@@ -323,7 +450,7 @@
 
     <!-- 3 -->
     <section class="block reveal" id="kontrol">
-      <div class="sec-head"><span class="sec-num">03</span><h2>Pemeriksaan &amp; Jadwal Kontrol (ANC)</h2></div>
+      <div class="sec-head"><span class="sec-num">04</span><h2>Pemeriksaan &amp; Jadwal Kontrol (ANC)</h2></div>
       <div class="table-wrap">
         <table>
           <thead><tr><th>Periode</th><th>Frekuensi</th><th>Yang Dicek</th></tr></thead>
@@ -345,7 +472,7 @@
 
     <!-- 4 -->
     <section class="block reveal" id="nutrisi">
-      <div class="sec-head"><span class="sec-num">04</span><h2>Nutrisi: Boleh &amp; Tidak Boleh</h2></div>
+      <div class="sec-head"><span class="sec-num">05</span><h2>Nutrisi: Boleh &amp; Tidak Boleh</h2></div>
       <div class="grid2">
         <div class="card">
           <h3 style="margin-top:0;color:var(--sage-deep)">✓ Dianjurkan</h3>
@@ -375,7 +502,7 @@
 
     <!-- 5 -->
     <section class="block reveal" id="obat">
-      <div class="sec-head"><span class="sec-num">05</span><h2>Obat, Skincare &amp; Aktivitas</h2></div>
+      <div class="sec-head"><span class="sec-num">06</span><h2>Obat, Skincare &amp; Aktivitas</h2></div>
       <div class="callout danger">
         <p class="t">🚫 Jangan minum obat apa pun tanpa konsultasi dokter — termasuk obat warung.</p>
         <p><strong>Relatif aman (tetap tanya):</strong> Paracetamol, antasida tertentu. <strong>Hindari:</strong> Ibuprofen/aspirin (NSAID, terutama trimester 3), isotretinoin, tetrasiklin, obat hormonal.</p>
@@ -409,7 +536,7 @@
 
     <!-- 6 -->
     <section class="block reveal" id="bahaya">
-      <div class="sec-head"><span class="sec-num">06</span><h2>Tanda Bahaya — ke Dokter SEGERA</h2></div>
+      <div class="sec-head"><span class="sec-num">07</span><h2>Tanda Bahaya — ke Dokter SEGERA</h2></div>
       <div class="callout danger">
         <p class="t">🚨 Langsung ke IGD / rumah sakit bila:</p>
         <ul style="margin-top:6px">
@@ -428,7 +555,7 @@
 
     <!-- 7 -->
     <section class="block reveal" id="persiapan">
-      <div class="sec-head"><span class="sec-num">07</span><h2>Finansial, Administrasi &amp; Mental</h2></div>
+      <div class="sec-head"><span class="sec-num">08</span><h2>Finansial, Administrasi &amp; Mental</h2></div>
       <h3>Finansial</h3>
       <p>Hitung anggaran: kontrol+USG rutin, lab, vitamin, persalinan, perlengkapan bayi, dana darurat.</p>
       <div class="table-wrap">
@@ -459,7 +586,7 @@
 
     <!-- 8 -->
     <section class="block reveal" id="persalinan">
-      <div class="sec-head"><span class="sec-num">08</span><h2>Persalinan: Normal vs Caesar</h2></div>
+      <div class="sec-head"><span class="sec-num">09</span><h2>Persalinan: Normal vs Caesar</h2></div>
       <div class="grid2">
         <div class="card">
           <h3 style="margin-top:0">🌿 Normal (Pervaginam)</h3>
@@ -484,7 +611,7 @@
 
     <!-- 9 -->
     <section class="block reveal" id="hospitalbag">
-      <div class="sec-head"><span class="sec-num">09</span><h2>Hospital Bag (Tas Persalinan)</h2></div>
+      <div class="sec-head"><span class="sec-num">10</span><h2>Hospital Bag (Tas Persalinan)</h2></div>
       <p>Siapkan <strong>sejak minggu ke-36</strong>. Pisahkan 3 tas: Dokumen, Ibu, Bayi.</p>
       <div class="grid3">
         <div class="card">
@@ -527,7 +654,7 @@
 
     <!-- 10 -->
     <section class="block reveal" id="perlengkapan">
-      <div class="sec-head"><span class="sec-num">10</span><h2>Perlengkapan Bayi &amp; Ibu di Rumah</h2></div>
+      <div class="sec-head"><span class="sec-num">11</span><h2>Perlengkapan Bayi &amp; Ibu di Rumah</h2></div>
       <div class="grid2">
         <div class="card"><h4 style="margin-top:0">🛏️ Tidur</h4><p>Box bayi / co-sleeper, kasur + perlak + sprei (2–3), bedong, selimut, kelambu.</p></div>
         <div class="card"><h4 style="margin-top:0">🍼 Menyusui</h4><p>Bra &amp; breast pad, pompa ASI, botol kaca + sterilizer, kantong ASI, bantal menyusui, apron.</p></div>
@@ -539,7 +666,7 @@
 
     <!-- 11 -->
     <section class="block reveal" id="produk">
-      <div class="sec-head"><span class="sec-num">11</span><h2>Rekomendasi Merk &amp; Link Belanja</h2></div>
+      <div class="sec-head"><span class="sec-num">12</span><h2>Rekomendasi Merk &amp; Link Belanja</h2></div>
       <div class="callout info"><p class="t">ℹ️ Cara aman belanja</p><p>Selalu beli dari <strong>Official Store</strong> (label Mall / centang biru). Baca rating &amp; ulasan asli. Hindari harga jauh di bawah pasaran (sering palsu/KW).</p></div>
 
       <h3>🔗 Official Store Terverifikasi (Tokopedia)</h3>
@@ -564,7 +691,7 @@
 
     <!-- 12 -->
     <section class="block reveal" id="jaga">
-      <div class="sec-head"><span class="sec-num">12</span><h2>Hal yang Harus Dijaga Sehari-hari</h2></div>
+      <div class="sec-head"><span class="sec-num">13</span><h2>Hal yang Harus Dijaga Sehari-hari</h2></div>
       <div class="grid2">
         <div class="card">
           <h4 style="margin-top:0">🤰 Fisik</h4>
@@ -607,7 +734,7 @@
 
     <!-- 13 -->
     <section class="block reveal" id="timeline">
-      <div class="sec-head"><span class="sec-num">13</span><h2>Timeline Bulan ke Bulan</h2></div>
+      <div class="sec-head"><span class="sec-num">14</span><h2>Timeline Bulan ke Bulan</h2></div>
       <div class="table-wrap">
         <table>
           <thead><tr><th>Bulan</th><th>Minggu</th><th>To-Do Utama</th></tr></thead>
@@ -699,6 +826,86 @@
   const toTop=document.getElementById('toTop');
   addEventListener('scroll',()=>{toTop.classList.toggle('show',scrollY>600)});
   toTop.onclick=()=>scrollTo({top:0,behavior:'smooth'});
+
+  // Auto-number sections (so manual renumbering is never needed)
+  document.querySelectorAll('.sec-num').forEach((el,i)=>el.textContent=String(i+1).padStart(2,'0'));
+
+  // ---------- Pregnancy calendar ----------
+  const WEEKS=[
+    {w:4,s:'biji poppy',d:'Embrio menempel di dinding rahim',m:'Test pack positif; mulai/teruskan asam folat, stop rokok & alkohol'},
+    {w:5,s:'biji wijen',d:'Tabung saraf & bakal jantung terbentuk',m:'Mual mungkin mulai; jadwalkan kontrol pertama'},
+    {w:6,s:'biji lentil',d:'Detak jantung mulai; tunas tangan & kaki',m:'Morning sickness & payudara nyeri; makan porsi kecil'},
+    {w:7,s:'blueberry',d:'Otak & wajah berkembang pesat',m:'Sering BAK & lelah; cukupi cairan'},
+    {w:8,s:'raspberry',d:'Semua organ dasar terbentuk; jari mulai tampak',m:'USG pertama biasanya tampak detak jantung'},
+    {w:9,s:'buah ceri',d:'Embrio resmi menjadi janin; gerak halus',m:'Emosi naik-turun; jaga pola makan'},
+    {w:10,s:'stroberi',d:'Organ vital mulai berfungsi; kuku tumbuh',m:'NIPT bisa dilakukan sejak minggu ini'},
+    {w:11,s:'buah ara',d:'Tulang mengeras; janin bisa menelan',m:'Mual mulai mereda sebagian'},
+    {w:12,s:'jeruk nipis',d:'Refleks muncul; akhir periode paling kritis',m:'USG; risiko keguguran menurun'},
+    {w:13,s:'lemon',d:'Sidik jari terbentuk; masuk trimester 2',m:'Energi mulai membaik'},
+    {w:14,s:'buah persik',d:'Bisa berekspresi & menggerakkan wajah',m:'Nafsu makan kembali; siapkan baju hamil'},
+    {w:15,s:'apel',d:'"Menghirup" cairan ketuban; tulang menguat',m:'Kulit lebih sensitif (waspada melasma)'},
+    {w:16,s:'alpukat',d:'Mulai bisa mendengar suara; makin aktif',m:'Mungkin mulai terasa gerakan halus'},
+    {w:17,s:'buah pir',d:'Lemak tubuh mulai terbentuk',m:'Nyeri ligamen bundar bisa muncul'},
+    {w:18,s:'paprika',d:'Sistem saraf matang',m:'USG anomali (18–22 mg); sering tahu jenis kelamin'},
+    {w:19,s:'tomat besar',d:'Lapisan vernix melindungi kulit',m:'Pusing & kram kaki bisa muncul'},
+    {w:20,s:'pisang',d:'Setengah jalan! Rambut & kuku tumbuh',m:'Gerakan janin makin terasa jelas'},
+    {w:21,s:'wortel',d:'Aktif menendang; alis terbentuk',m:'Jaga asupan zat besi'},
+    {w:22,s:'pepaya kecil',d:'Indra berkembang; bisa pegang tali pusat',m:'Perut makin terlihat'},
+    {w:23,s:'mangga',d:'Paru berkembang; pendengaran tajam',m:'Bengkak ringan kaki bisa mulai'},
+    {w:24,s:'jagung manis',d:'Batas viabilitas; wajah hampir lengkap',m:'Tes gula darah (24–28 mg)'},
+    {w:25,s:'kembang kol',d:'Lemak bertambah; kulit mengencang',m:'Nyeri punggung; perbaiki postur'},
+    {w:26,s:'daun bawang',d:'Mata mulai membuka; merespons cahaya',m:'Tensi dipantau; waspada preeklamsia'},
+    {w:27,s:'bunga kol besar',d:'Akhir trimester 2; pola tidur terbentuk',m:'Mulai kelas prenatal & edukasi laktasi'},
+    {w:28,s:'terong',d:'Masuk trimester 3; otak tumbuh pesat',m:'Kontrol tiap 2 minggu; vaksin Tdap'},
+    {w:29,s:'labu butternut',d:'Tulang menguat; butuh kalsium',m:'Sesak & heartburn bisa meningkat'},
+    {w:30,s:'kubis besar',d:'Mata bisa buka-tutup; ketuban berkurang',m:'Mulai hitung gerakan janin'},
+    {w:31,s:'kelapa',d:'Berat badan bertambah pesat',m:'Braxton Hicks bisa mulai terasa'},
+    {w:32,s:'jicama',d:'Posisi mulai menetap (idealnya kepala di bawah)',m:'Cek posisi janin lewat USG'},
+    {w:33,s:'nanas',d:'Sistem imun berkembang; tengkorak masih lunak',m:'Susah tidur; tidur miring kiri'},
+    {w:34,s:'melon cantaloupe',d:'Paru hampir matang',m:'Susun birth plan & mulai hospital bag'},
+    {w:35,s:'melon honeydew',d:'Berat naik cepat; ginjal matang',m:'Finalisasi hospital bag (siap mg 36)'},
+    {w:36,s:'selada romaine',d:'"Late preterm"; kepala turun ke panggul',m:'Kontrol tiap minggu mulai sekarang'},
+    {w:37,s:'daun bawang besar',d:'"Early term" (cukup bulan dini)',m:'Pantau tanda-tanda persalinan'},
+    {w:38,s:'daun prei',d:'Organ matang; lanugo mulai rontok',m:'Pastikan tas & dokumen siap'},
+    {w:39,s:'semangka mini',d:'"Full term" — siap lahir',m:'Waspada kontraksi teratur & ketuban pecah'},
+    {w:40,s:'semangka kecil',d:'Perkiraan lahir (HPL)!',m:'Bila lewat HPL, dokter akan pantau lebih ketat'}
+  ];
+  const DAY=864e5;
+  const calBody=document.getElementById('calBody');
+  const fmt=d=>d.toLocaleDateString('id-ID',{day:'numeric',month:'short',year:'numeric'});
+  function renderCal(hpht,curWeek){
+    calBody.innerHTML='';
+    WEEKS.forEach(x=>{
+      let date='—';
+      if(hpht){date=fmt(new Date(hpht.getTime()+(x.w-1)*7*DAY));}
+      const tr=document.createElement('tr');
+      tr.innerHTML='<td>'+x.w+'</td><td>'+date+'</td><td>'+x.s+'</td><td>'+x.d+'</td><td>'+x.m+'</td>';
+      if(hpht&&x.w===curWeek)tr.className='now';
+      calBody.appendChild(tr);
+    });
+  }
+  function calc(){
+    const v=document.getElementById('hpht').value;
+    const out=document.getElementById('calcOut');
+    if(!v){out.classList.remove('show');renderCal(null);return;}
+    const hpht=new Date(v+'T00:00:00');
+    const today=new Date();today.setHours(0,0,0,0);
+    const edd=new Date(hpht.getTime()+280*DAY);
+    const days=Math.floor((today-hpht)/DAY);
+    const wk=Math.floor(days/7),dy=((days%7)+7)%7;
+    const tri=wk<14?1:wk<28?2:3;
+    const left=Math.ceil((edd-today)/DAY);
+    out.classList.add('show');
+    document.getElementById('stWeek').textContent=(days<0)?'Belum mulai':(wk+' mg '+dy+' hr');
+    document.getElementById('stTri').innerHTML=(days<0||wk>42)?'–':'<span class="tri-tag tri'+tri+'">Trimester '+tri+'</span>';
+    document.getElementById('stEdd').textContent=fmt(edd);
+    document.getElementById('stLeft').textContent=left>0?(left+' hari lagi'):(left===0?'Hari ini! 🎉':'Lewat HPL '+(-left)+' hari');
+    document.getElementById('calcBar').style.width=Math.max(0,Math.min(100,(days/280)*100))+'%';
+    document.getElementById('calHint').textContent='Baris tersorot = perkiraan minggu Anda saat ini. Tanggal di tiap baris adalah awal minggu tersebut.';
+    renderCal(hpht,wk);
+  }
+  document.getElementById('hpht').addEventListener('change',calc);
+  renderCal(null);
 </script>
 </body>
 </html>
