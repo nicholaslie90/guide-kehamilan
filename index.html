@@ -30,7 +30,7 @@
     --radius:18px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth;scroll-padding-top:78px}
+  html{scroll-behavior:smooth;scroll-padding-top:78px;overflow-x:hidden;width:100%}
   body{
     background:var(--cream);
     color:var(--ink);
@@ -38,7 +38,12 @@
     font-size:17px;line-height:1.7;font-weight:400;
     -webkit-font-smoothing:antialiased;
     overflow-x:hidden;
+    width:100%;max-width:100%;
+    position:relative;
   }
+  /* prevent any child from forcing the page wider than the viewport */
+  *{max-width:100%}
+  img,video,iframe{height:auto}
   /* subtle grain + warmth */
   body::before{
     content:"";position:fixed;inset:0;z-index:-2;
@@ -71,6 +76,9 @@
   /* ---------- Layout ---------- */
   .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
   .layout{display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:start;padding-top:36px}
+  .layout>*{min-width:0}
+  #content{min-width:0;max-width:100%}
+  .grid2>*,.grid3>*{min-width:0}
 
   /* ---------- Side nav (desktop) ---------- */
   .toc{position:sticky;top:92px;align-self:start}
@@ -87,7 +95,7 @@
   .hero{padding:42px 0 18px;position:relative}
   .eyebrow{display:inline-block;font-weight:800;letter-spacing:.18em;text-transform:uppercase;font-size:12.5px;
     color:var(--sage-deep);background:var(--tip-bg);padding:6px 14px;border-radius:999px;margin-bottom:22px}
-  .hero h1{font-family:'Fraunces';font-weight:600;font-size:clamp(2.4rem,7vw,4.4rem);line-height:1.02;letter-spacing:-.01em}
+  .hero h1{font-family:'Fraunces';font-weight:600;font-size:clamp(2rem,7vw,4.4rem);line-height:1.04;letter-spacing:-.01em;overflow-wrap:break-word;hyphens:auto}
   .hero h1 em{font-style:italic;color:var(--clay)}
   .hero p.lead{font-size:clamp(1.05rem,2.5vw,1.25rem);color:var(--ink-soft);max-width:58ch;margin-top:22px}
   .hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
@@ -140,7 +148,7 @@
   ul.checkbox li::before{content:"";position:absolute;left:0;top:9px;width:15px;height:15px;border:2px solid var(--clay);border-radius:4px}
 
   /* tables */
-  .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:14px;margin:16px 0;background:var(--card)}
+  .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:14px;margin:16px 0;background:var(--card);max-width:100%}
   table{border-collapse:collapse;width:100%;min-width:520px;font-size:15px}
   th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
   thead th{background:var(--cream-2);font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-soft)}
@@ -202,13 +210,24 @@
   #calTable tr.now td:first-child{font-weight:800;color:var(--clay-deep)}
   #calTable td:first-child{white-space:nowrap;font-weight:700}
 
+  .sumlist{columns:2;column-gap:32px}
+
   @media (max-width:880px){
     .calc-grid{grid-template-columns:1fr 1fr}
     .layout{grid-template-columns:1fr;gap:0;padding-top:6px}
     .toc{display:none}
     .grid2,.grid3,.contact{grid-template-columns:1fr}
+    .sumlist{columns:1}
     body{font-size:16px}
     .menu-btn{display:inline-flex}
+    .wrap{padding:0 16px}
+    .card{padding:18px 18px}
+    .callout{padding:14px 16px}
+    /* let tables reflow to full width — no horizontal scroll on mobile */
+    table{min-width:0;font-size:13.5px}
+    th,td{padding:9px 9px}
+    #calTable{font-size:12.5px}
+    #calTable td:first-child{white-space:normal}
   }
   @media (min-width:881px){.menu-btn{display:none}}
 </style>
@@ -753,7 +772,7 @@
 
       <div class="card" style="margin-top:24px;background:var(--ink);color:var(--cream);border-color:var(--ink)">
         <h3 style="margin-top:0;color:var(--blush)">✅ Ringkasan 10 Hal Terpenting</h3>
-        <ol style="columns:2;column-gap:32px">
+        <ol class="sumlist">
           <li>Asam folat sejak awal + vitamin prenatal</li>
           <li>Kontrol rutin (ANC) + USG sesuai jadwal</li>
           <li>Stop total rokok, alkohol, narkoba</li>
