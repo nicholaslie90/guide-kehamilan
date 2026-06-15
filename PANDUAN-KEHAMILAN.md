@@ -21,6 +21,7 @@
 11. [Rekomendasi Merk Produk Ibu Hamil & Bayi](#11-rekomendasi-merk-produk-ibu-hamil--bayi)
 12. [Hal yang Harus Dijaga & Diperhatikan Sehari-hari](#12-hal-yang-harus-dijaga--diperhatikan-sehari-hari)
 13. [Timeline Ringkas (Bulan ke Bulan)](#13-timeline-ringkas-bulan-ke-bulan)
+14. [Standar Bayi Sehat (WHO & Kemenkes)](#14-standar-bayi-sehat-who--kemenkes)
 
 ---
 
@@ -526,6 +527,67 @@ Link berikut sudah saya cek mengarah ke **toko resmi** brand (per Juni 2026). Un
 | 7 | 28–31 | Kontrol tiap 2 minggu, vaksin Tdap, finalisasi anggaran & BPJS |
 | 8 | 32–35 | Cek posisi janin, tentukan normal/caesar, siapkan kamar bayi |
 | 9 | 36–40 | **Hospital bag siap**, kontrol tiap minggu, birth plan final, pantau tanda persalinan |
+
+---
+
+## 14. Standar Bayi Sehat (WHO & Kemenkes)
+
+Acuan menilai bayi tumbuh sehat, berdasarkan **WHO Child Growth Standards** & pedoman **Kemenkes (Buku KIA)**. Angka adalah rentang umum — selalu konsultasikan ke dokter anak/bidan & pantau rutin di Posyandu.
+
+### 1. Saat Lahir — Kriteria Bayi Sehat (cukup bulan)
+| Parameter | Normal | Perlu perhatian |
+|---|---|---|
+| Berat lahir | 2.500–4.000 g | BBLR <2.500 g · makrosomia >4.000 g |
+| Panjang badan | ±48–52 cm | jauh di luar rentang → evaluasi |
+| Lingkar kepala | ±33–35 cm | <32 / >37 cm → evaluasi |
+| Skor APGAR (menit 1 & 5) | 7–10 | <7 → butuh bantuan/observasi |
+| Usia kehamilan | 37–42 minggu | <37 mg prematur · >42 mg postterm |
+
+Tanda sehat lain: **menangis spontan**, kulit kemerahan, gerak aktif, refleks baik (isap, genggam, Moro).
+Rutin saat lahir: **IMD <1 jam**, **skrining hipotiroid (SHK)** dari darah tumit usia 48–72 jam, suntik **Vitamin K1** + salep mata, imunisasi **Hepatitis B <24 jam**. Penurunan berat **8–10%** di minggu pertama normal (kembali ±2 minggu).
+
+### 2. ASI & Nutrisi (WHO & Kemenkes)
+- **IMD** <1 jam; jangan buang **kolostrum**.
+- **ASI eksklusif 6 bulan penuh** — tanpa air/madu/makanan apa pun.
+- Mulai **MPASI usia 6 bulan**, ASI dilanjutkan **hingga ≥2 tahun**.
+- Menyusu sering, **8–12×/hari** sesuai permintaan.
+
+### 3. Pertumbuhan — Pantau di Buku KIA / Posyandu
+WHO memakai **4 indikator** dengan **z-score (SD)**; rentang normal umumnya **−2 SD s/d +2 SD**.
+
+| Indikator | Menilai | Di luar normal |
+|---|---|---|
+| BB/U | berat-untuk-umur | <−2 SD: berat kurang (underweight) |
+| PB/U atau TB/U | tinggi-untuk-umur | <−2 SD: **stunting** (pendek) |
+| BB/PB | berat-untuk-panjang | <−2 SD: **wasting** (gizi kurang) · >+2 SD: gizi lebih |
+| LK/U | lingkar kepala | di luar rentang → evaluasi |
+
+Patokan praktis: berat lahir kembali ±2 minggu, **±2× lipat** di ~5 bulan, **±3× lipat** di ~1 tahun. **Timbang & ukur tiap bulan** dan plot di grafik KIA — yang penting kurvanya mengikuti garis, bukan satu angka.
+
+### 4. Imunisasi Dasar Lengkap (Kemenkes)
+| Usia | Imunisasi |
+|---|---|
+| 0 bln (<24 jam) | Hepatitis B (HB-0) |
+| 1 bln | BCG, Polio tetes (OPV) 1 |
+| 2 bln | DPT-HB-Hib 1, OPV 2, PCV 1, Rotavirus 1 |
+| 3 bln | DPT-HB-Hib 2, OPV 3, PCV 2 |
+| 4 bln | DPT-HB-Hib 3, OPV 4, Polio suntik (IPV) 1, Rotavirus 2 |
+| 6 bln | Rotavirus 3, IPV 2 (sesuai daerah) |
+| 9 bln | Campak-Rubella (MR) 1 |
+| 10–12 bln | PCV booster · JE (daerah endemis) |
+| 18 bln | DPT-HB-Hib lanjutan, Polio lanjutan, MR 2 |
+
+> ⚠️ **Jadwal pasti ikuti Buku KIA edisi terbaru & arahan puskesmas/dokter** — program nasional terus diperbarui (penambahan PCV, Rotavirus, IPV ke-2). Imunisasi **gratis** di Posyandu/Puskesmas.
+
+### 5. Tumbuh Kembang & Tanda Bayi Sehat Harian
+**Milestone (perkiraan, rentang bervariasi):** 2 bln senyum sosial & angkat kepala · 4 bln berguling & meraih · 6 bln mulai duduk & memegang · 9 bln duduk sendiri, merangkak, "ma-ma/ba-ba" · 12 bln berdiri/rambatan & beberapa kata · 18–24 bln jalan/lari & gabung 2 kata. Pantau dengan **KPSP/SDIDTK** di Buku KIA.
+
+**Tanda harian sehat:** menyusu kuat, **popok basah ≥6×/hari** & BAB teratur, tidur cukup, aktif & menangis kuat, tali pusat **kering & lepas 1–2 minggu** tanpa infeksi, berat naik mengikuti grafik KIA.
+
+### 6. Tanda Bahaya Bayi Baru Lahir — Segera ke Faskes
+🚨 Tidak mau menyusu / muntah semua · **kejang** atau sangat lemas · **napas cepat (≥60×/mnt)**/sesak/tarikan dinding dada · **demam (≥37,5–38°C)** atau teraba dingin (hipotermia) · **kuning** di hari pertama atau sampai telapak tangan/kaki · tali pusat **merah/bernanah/bau** / mata bernanah · diare, tidak BAK/BAB, kulit **biru/pucat**.
+
+*Sumber: WHO Child Growth Standards & rekomendasi menyusui WHO; Kemenkes RI — Buku KIA & jadwal imunisasi nasional.*
 
 ---
 
