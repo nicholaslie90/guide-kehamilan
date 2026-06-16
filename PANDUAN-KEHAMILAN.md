@@ -171,7 +171,7 @@ Sebagian besar perubahan tubuh saat hamil **normal**, dipicu lonjakan hormon (hC
 
 > 📅 **Versi interaktif** ada di situs web: cukup masukkan tanggal HPHT, kalender otomatis menghitung HPL, usia kehamilan saat ini, sisa waktu, dan menyorot minggu Anda.
 >
-> **Tersetel untuk Anda:** HPHT = **11 Mei 2026** → pada **15 Juni 2026 usia kehamilan = 5 minggu**, dan **Perkiraan Lahir (HPL) = 15 Februari 2027**. (Ubah bila tanggal sebenarnya berbeda.)
+> **Tersetel untuk Anda:** HPHT = **7 Mei 2026** → **5 minggu pada 11 Juni 2026**, dan **Perkiraan Lahir (HPL) = 11 Februari 2027**. (Ubah bila tanggal sebenarnya berbeda.)
 
 | Mg | Ukuran Janin | Perkembangan | Untuk Ibu |
 |---|---|---|---|
@@ -345,11 +345,42 @@ Standar minimal kontrol (idealnya lebih sering bila ada risiko):
 - **Indikasi umum:** bayi sungsang/melintang, plasenta previa, panggul sempit, gawat janin, riwayat SC, preeklamsia berat, dll. Bisa **terencana** atau **darurat**.
 - **Persiapan:** puasa sebelum operasi (sesuai instruksi), tes darah, kadang cukur area, pasang infus/kateter.
 - **Pemulihan:** lebih lama (luka sayatan), butuh **korset/stagen pasca-operasi**, hindari angkat berat, mobilisasi bertahap, jaga luka tetap kering & bersih.
-- **Barang khusus:** **celana dalam high-waist longgar** (tidak menekan luka), korset post-SC, baju longгar berkancing depan (memudahkan menyusui), pembalut nifas.
+- **Barang khusus:** **celana dalam high-waist longgar** (tidak menekan luka), korset post-SC, baju longgar berkancing depan (memudahkan menyusui), pembalut nifas.
 
 ### Birth Plan (Rencana Persalinan) — buat & diskusikan dengan dokter
 - Preferensi metode, pereda nyeri (epidural?), siapa pendamping, IMD & rooming-in, ASI eksklusif, penundaan klem tali pusat, dll.
 - **Tetap fleksibel** — kondisi medis bisa mengubah rencana demi keselamatan.
+
+### ✅ Tips Persiapan Persalinan Normal
+**Jauh hari (trimester 3):**
+- **Senam hamil / prenatal yoga** & jalan kaki rutin — jaga stamina & bantu kepala janin turun.
+- **Latihan pernapasan** & relaksasi (boleh hypnobirthing) untuk kelola nyeri kontraksi.
+- **Senam Kegel** untuk otot dasar panggul.
+- **Pijat perineum** mulai ±minggu 34 (saran bidan) — kurangi risiko robekan.
+- Jaga kenaikan berat wajar & pantau gerakan janin.
+
+**Saat & setelah persalinan:**
+- Pahami **kapan ke RS**: kontraksi teratur pola **5-1-1** (tiap 5 menit, lama 1 menit, ≥1 jam), ketuban pecah, atau keluar darah.
+- Saat kontraksi: **bergerak/ubah posisi**, gym ball, pijat, kompres hangat — tidak harus berbaring.
+- Diskusikan opsi **pereda nyeri** (epidural) bila perlu.
+- Pemulihan: rawat jahitan perineum, **sitz bath**/kompres, pembalut nifas, banyak serat & air agar BAB lancar.
+
+### ✅ Tips Persiapan Persalinan Caesar (SC)
+**Sebelum operasi:**
+- **Puasa** sesuai instruksi (umumnya 6–8 jam sebelum).
+- Lengkapi **tes darah & dokumen + informed consent**; konfirmasi biaya/BPJS.
+- Mandi bersih; **lepas perhiasan, cat & kuku palsu, lensa kontak, make-up**.
+- Akan dipasang **infus & kateter**, area perut kadang dicukur; anestesi umumnya **spinal** (ibu tetap sadar).
+- Atur pendamping & bantuan di rumah untuk pemulihan.
+
+**Setelah operasi (pemulihan):**
+- **Mobilisasi dini bertahap** (miring → duduk → jalan) sesuai izin dokter — cegah gumpalan darah.
+- **Jaga luka kering & bersih**; pakai **korset post-SC** & CD high-waist longgar; tahan luka dengan bantal saat batuk/tertawa.
+- Manajemen nyeri sesuai resep; menyusui dengan posisi **football hold** agar tak menekan luka.
+- **Hindari angkat berat** (lebih berat dari bayi) ±6 minggu; cukup serat & air (cegah sembelit).
+- Waspadai **tanda infeksi luka**: merah, bengkak, bernanah, demam, nyeri memberat → ke dokter. Kontrol jahitan sesuai jadwal.
+
+> 🎒 **Untuk kedua metode:** siapkan **hospital bag sejak minggu 36**, kenali tanda persalinan & tanda bahaya, rencanakan transportasi ke RS, dan bahas **IMD, ASI, serta KB pasca-persalinan** dengan dokter.
 
 ---
 
