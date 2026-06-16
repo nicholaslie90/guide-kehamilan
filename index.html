@@ -548,7 +548,7 @@
     <!-- 3D simulation -->
     <section class="block reveal" id="simulasi3d">
       <div class="sec-head"><span class="sec-num">04</span><h2>Simulasi 3D Perkembangan Janin</h2></div>
-      <p>Geser <strong>slider minggu</strong> atau tekan ▶ untuk melihat janin tumbuh di dalam rahim. Putar tampilan dengan jari/mouse. <span class="muted">Ilustrasi bergaya — bukan gambaran anatomi presisi; ukuran panjang/berat adalah perkiraan rata-rata.</span></p>
+      <p>Geser <strong>slider minggu</strong> atau tekan ▶ untuk melihat perkembangan dari <strong>pra-embrio (gumpalan sel) → embrio (bentuk C, bakal tungkai) → janin</strong> di dalam rahim. Putar tampilan dengan jari/mouse. <span class="muted">Ilustrasi bergaya — bukan gambaran anatomi presisi; ukuran panjang/berat adalah perkiraan rata-rata.</span></p>
       <div class="sim3d">
         <div id="sim3dCanvas"></div>
         <div class="sim3d-badge"><div class="wk" id="simBadgeWk">5 mg</div><div class="sz" id="simBadgeSz">0,3 cm · &lt; 1 g</div></div>
@@ -1661,11 +1661,54 @@ const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const lerp=(a,b,t)=>a+(b-a)*t;
 const gsFor=w=>lerp(0.5,1.7,Math.pow(clamp((w-4)/36,0,1),0.65));
 
-function buildBaby(week){
-  const t=clamp((week-4)/36,0,1);
+function stageName(w){return w<6?'Pra-embrio':(w<10?'Embrio':'Janin');}
+
+function buildStage(week){
   const g=new THREE.Group();
-  const torsoR=lerp(0.34,0.52,t), torsoLen=lerp(0.42,0.95,t), headR=lerp(0.42,0.5,t);
-  const limbR=lerp(0.10,0.17,t), armLen=lerp(0.28,0.82,t), legLen=lerp(0.30,1.0,t);
+
+  // --- Pra-embrio (mg 4–5): gumpalan sel ---
+  if(week<6){
+    const base=0.17;
+    g.add(new THREE.Mesh(new THREE.SphereGeometry(base,20,20),skin));
+    [[0.13,0.05,0.02],[-0.11,0.09,-0.04],[0.05,-0.13,0.06],[-0.07,-0.07,-0.11],[0.03,0.14,-0.05],[0.1,-0.04,-0.09]]
+      .forEach(o=>{const c=new THREE.Mesh(new THREE.SphereGeometry(base*0.6,14,14),skin);c.position.set(o[0],o[1],o[2]);g.add(c);});
+    g.scale.setScalar(lerp(0.75,1.0,(week-4)/2));
+    return g;
+  }
+
+  // --- Embrio (mg 6–9): bentuk C melengkung, kepala besar → ekor mengecil ---
+  if(week<10){
+    const t=clamp((week-6)/3,0,1);
+    const curve=new THREE.CatmullRomCurve3([
+      new THREE.Vector3(0,0.55,0), new THREE.Vector3(0.2,0.32,0),
+      new THREE.Vector3(0.24,0.02,0), new THREE.Vector3(0.12,-0.28,0),
+      new THREE.Vector3(-0.14,-0.46,0)
+    ]);
+    const N=8;
+    for(let i=0;i<N;i++){
+      const p=curve.getPoint(i/(N-1));
+      const r=lerp(0.21,0.05,i/(N-1));
+      const s=new THREE.Mesh(new THREE.SphereGeometry(r,16,16),skin);
+      s.position.copy(p); g.add(s);
+    }
+    // bintik mata
+    const eye=new THREE.Mesh(new THREE.SphereGeometry(0.045,10,10),new THREE.MeshStandardMaterial({color:0x3a2b2b,roughness:0.6}));
+    eye.position.set(0.13,0.52,0.15); g.add(eye);
+    // tunas tungkai (muncul ~mg 7+)
+    if(week>=7){
+      const budR=lerp(0.035,0.075,t);
+      [[0.24,0.12,0.07],[0.24,0.12,-0.07],[0.02,-0.34,0.07],[0.02,-0.34,-0.07]]
+        .forEach(o=>{const b=new THREE.Mesh(new THREE.SphereGeometry(budR,10,10),skin);b.position.set(o[0],o[1],o[2]);g.add(b);});
+    }
+    g.rotation.z=0.1;
+    g.scale.setScalar(lerp(0.85,1.15,t));
+    return g;
+  }
+
+  // --- Janin (mg 10+): menyerupai bayi, proporsi kepala menormal seiring usia ---
+  const t=clamp((week-10)/30,0,1);
+  const torsoR=lerp(0.32,0.52,t), torsoLen=lerp(0.40,0.95,t), headR=lerp(0.46,0.5,t);
+  const limbR=lerp(0.10,0.17,t), armLen=lerp(0.30,0.82,t), legLen=lerp(0.34,1.0,t);
   const torso=new THREE.Mesh(new THREE.SphereGeometry(1,28,28),skin);
   torso.scale.set(torsoR,torsoLen,torsoR*0.9); g.add(torso);
   const head=new THREE.Mesh(new THREE.SphereGeometry(headR,28,28),skin);
@@ -1702,13 +1745,13 @@ function update(week){
   simWeek.value=week;
   $('simWklabel').textContent='Minggu '+week;
   $('simBadgeWk').textContent=week+' mg';
-  const L=fmtLen(sz[0]),Wt=fmtWt(sz[1]);
+  const L=fmtLen(sz[0]),Wt=fmtWt(sz[1]),st=stageName(week);
   $('simLen').textContent=L; $('simWt').textContent=Wt; $('simSize').textContent=e.s;
-  $('simBadgeSz').textContent=L+' · '+Wt;
-  $('simDev').textContent='Minggu '+week+': '+e.d+'.';
+  $('simBadgeSz').textContent=st+' · '+L+' · '+Wt;
+  $('simDev').textContent='Minggu '+week+' · '+st+': '+e.d+'.';
   if(scene){
     if(baby){scene.remove(baby);baby.traverse(o=>{if(o.geometry)o.geometry.dispose();});}
-    baby=buildBaby(week); scene.add(baby);
+    baby=buildStage(week); scene.add(baby);
     buildCord(week);
   }
 }
