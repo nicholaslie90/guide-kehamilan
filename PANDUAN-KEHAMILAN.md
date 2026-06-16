@@ -255,7 +255,7 @@ Standar minimal kontrol (idealnya lebih sering bila ada risiko):
 - **Protein:** ayam/ikan/daging **matang sempurna**, telur matang, tahu, tempe, kacang-kacangan.
 - **Ikan rendah merkuri:** salmon, lele, kembung, nila (2–3 porsi/minggu) — sumber DHA untuk otak janin.
 - **Sayur & buah** (cuci bersih), karbohidrat kompleks (nasi merah, oat, kentang).
-- **Kalsium:** susu, yогурt, keju pasteurisasi, ikan teri.
+- **Kalsium:** susu, yogurt, keju pasteurisasi, ikan teri.
 - **Zat besi:** daging merah, bayam, hati (batasi hati karena vitamin A tinggi).
 - **Susu ibu hamil** (opsional, pelengkap — bukan pengganti makanan).
 
@@ -271,6 +271,22 @@ Standar minimal kontrol (idealnya lebih sering bila ada risiko):
 - **MSG/garam/gula berlebihan,** makanan sangat berpengawet.
 - **Jamu/herbal tanpa anjuran dokter** (beberapa memicu kontraksi).
 - **Nanas muda/durian/tape berlebihan** — secara medis tidak terbukti bahaya dalam porsi normal, tapi konsumsi wajar saja.
+
+### Tabel Cepat: Boleh vs Hindari per Kelompok Makanan
+| Kelompok | ✅ Boleh | ❌ Hindari / batasi |
+|---|---|---|
+| **Ikan & seafood** | Salmon, lele, kembung, nila, teri, udang — **matang**, 2–3×/mg | Mentah (sushi/sashimi), tinggi merkuri (hiu, marlin, tuna mata besar, king mackerel), kerang mentah, ikan asap dingin |
+| **Daging & unggas** | Ayam, sapi, kambing — **matang sempurna** | Mentah/½ matang (steak rare), olahan dingin/deli & sosis kecuali dipanaskan, hati berlebihan |
+| **Telur** | Matang (kuning & putih set) | Mentah/½ matang, mayones/adonan kue mentah |
+| **Susu & keju** | Pasteurisasi/UHT: susu, yogurt, keju keras (cheddar, mozzarella) | Susu mentah (raw), keju lunak berjamur (brie, camembert, blue cheese), feta mentah |
+| **Sayur & buah** | Dicuci bersih; matang atau segar terkupas | Lalapan/sayur tak dicuci, **kecambah/tauge mentah**, buah tak dicuci |
+| **Karbohidrat** | Nasi (merah), oat, kentang, roti gandum, ubi | Berlebihan gula/tepung olahan |
+| **Minuman** | Air putih (±2,5–3 L/hari), susu, jus pasteurisasi | **Alkohol (NOL)**, kafein >200 mg/hari, energy drink, jus mentah, sebagian teh herbal |
+| **Lainnya** | Tahu, tempe, kacang | Makanan kurang higienis/terlalu asin-manis, MSG berlebih, jamu/suplemen tanpa anjuran dokter |
+
+> 🧼 **Kunci keamanan pangan:** masak sampai **matang** & **cuci tangan + bahan** (cegah Listeria, Salmonella, Toksoplasma); pisahkan talenan matang/mentah; panaskan ulang makanan sisa hingga panas merata.
+>
+> ℹ️ **Mitos:** nanas, durian, tape, makanan pedas, santan — dalam **porsi wajar** umumnya aman & tidak terbukti memicu keguguran. Yang penting: tidak berlebihan, higienis, matang.
 
 ---
 
