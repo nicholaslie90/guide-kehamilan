@@ -264,6 +264,19 @@
   .ck-item input{width:20px;height:20px;accent-color:var(--sage-deep);cursor:pointer;flex:none}
   .ck-item.done{background:var(--tip-bg);border-color:var(--sage);color:var(--ink-soft);text-decoration:line-through}
 
+  /* Buku KIA */
+  .kia-link{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:10px 15px;border-radius:999px;font-weight:700;font-size:14px}
+  .kia-link:hover{border-color:var(--clay);color:var(--clay-deep)}
+  #kiaViewer iframe{width:100%;height:80vh;border:1px solid var(--line);border-radius:14px;margin-top:14px;background:#fff}
+  .kia-form{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:12px 0}
+  .kia-form .gc-field{width:auto}
+  .kia-form input,.kia-form select,.kia-form textarea{width:100%;font-family:'Mulish';font-size:15px;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
+  .kia-form .full{grid-column:1/-1}
+  .kia-form textarea{min-height:54px;resize:vertical}
+  .anc-del{background:none;border:1px solid var(--line);color:var(--danger);border-radius:8px;padding:3px 9px;cursor:pointer;font-weight:800}
+  .anc-del:hover{background:var(--danger-bg)}
+  .saved-note{font-size:12px;color:var(--sage-deep);font-weight:700}
+
   .sumlist{columns:2;column-gap:32px}
 
   @media (max-width:880px){
@@ -271,6 +284,7 @@
     .sim-read{grid-template-columns:1fr 1fr}
     .gc-field input{width:100%}
     .gc-field{flex:1;min-width:120px}
+    .kia-form{grid-template-columns:1fr}
     .calc-grid{grid-template-columns:1fr 1fr}
     .layout{grid-template-columns:1fr;gap:0;padding-top:6px}
     .toc{display:none}
@@ -1034,6 +1048,67 @@
       <p class="muted" style="font-size:13px">Jadwal mengikuti program Kemenkes; konfirmasi ke Buku KIA/puskesmas (program dapat diperbarui). Imunisasi <strong>gratis</strong> di Posyandu/Puskesmas.</p>
     </section>
 
+    <!-- Buku KIA resmi -->
+    <section class="block reveal" id="bukukia">
+      <div class="sec-head"><span class="sec-num">18</span><h2>Buku KIA Resmi (Kemenkes 2024)</h2></div>
+      <p>Buku Kesehatan Ibu &amp; Anak edisi 2024 — dokumen resmi &amp; <strong>gratis</strong> dari Kemenkes (aslinya didapat di puskesmas). Baca/unduh versi digitalnya di sini.</p>
+      <div class="gc-btns">
+        <button id="kiaShow">📖 Tampilkan Buku KIA (PDF, ±17 MB)</button>
+        <a class="kia-link" href="https://kesprimkom.kemkes.go.id/assets/uploads/contents/others/Buku_KIA_2024.pdf" target="_blank" rel="noopener">↗ Buka di tab baru</a>
+        <a class="kia-link" href="https://kesprimkom.kemkes.go.id/assets/uploads/contents/others/Buku_KIA_2024.pdf" download>⬇ Unduh PDF</a>
+        <a class="kia-link" href="https://promkes.kemkes.go.id/buku-kia-kesehatan-ibu-dan-anak" target="_blank" rel="noopener">Halaman resmi Kemenkes</a>
+      </div>
+      <div id="kiaViewer"></div>
+      <p class="muted" style="font-size:13px">PDF dimuat langsung dari server resmi Kemenkes (±17 MB — hati-hati kuota di seluler). Selalu rujuk edisi terbaru dari puskesmas Anda.</p>
+    </section>
+
+    <!-- Buku KIA digital -->
+    <section class="block reveal" id="bukukiadigital">
+      <div class="sec-head"><span class="sec-num">19</span><h2>Catatan Buku KIA Digital</h2></div>
+      <p>Pencatat ala Buku KIA — <strong>tersimpan otomatis di browser ini</strong>. Lengkapi bersama grafik pertumbuhan &amp; checklist imunisasi di atas. <span class="muted">Catatan ini pribadi &amp; bukan pengganti Buku KIA fisik dari puskesmas.</span></p>
+
+      <h3>👩 Identitas Ibu</h3>
+      <div class="kia-form">
+        <div class="gc-field"><label for="kiaNama">Nama ibu</label><input id="kiaNama" type="text" placeholder="Nama lengkap"></div>
+        <div class="gc-field"><label for="kiaGol">Golongan darah</label><input id="kiaGol" type="text" placeholder="mis. O+"></div>
+        <div class="gc-field"><label for="kiaFaskes">Faskes / RS</label><input id="kiaFaskes" type="text" placeholder="mis. RSIA Mahati"></div>
+        <div class="gc-field"><label for="kiaDokter">Dokter / bidan</label><input id="kiaDokter" type="text" placeholder="mis. dr. Christian Sp.OG"></div>
+      </div>
+
+      <h3>🩺 Catatan Kunjungan (ANC)</h3>
+      <p class="muted" style="font-size:13.5px">Catat tiap kontrol kehamilan. Berguna untuk dibawa &amp; ditunjukkan ke dokter.</p>
+      <div class="kia-form">
+        <div class="gc-field"><label for="ancTgl">Tanggal</label><input id="ancTgl" type="date"></div>
+        <div class="gc-field"><label for="ancUk">Usia kehamilan (mgg)</label><input id="ancUk" type="number" min="0" max="42" placeholder="mis. 12"></div>
+        <div class="gc-field"><label for="ancBb">Berat ibu (kg)</label><input id="ancBb" type="number" step="0.1" placeholder="mis. 58.5"></div>
+        <div class="gc-field"><label for="ancTd">Tekanan darah</label><input id="ancTd" type="text" placeholder="mis. 120/80"></div>
+        <div class="gc-field"><label for="ancTfu">TFU (cm)</label><input id="ancTfu" type="number" step="0.5" placeholder="tinggi fundus"></div>
+        <div class="gc-field full"><label for="ancCat">Catatan / keluhan</label><input id="ancCat" type="text" placeholder="mis. mual, hasil USG, dll"></div>
+      </div>
+      <div class="gc-btns"><button id="ancAdd">+ Tambah kunjungan</button></div>
+      <div class="table-wrap" style="margin-top:12px">
+        <table>
+          <thead><tr><th>Tgl</th><th>UK</th><th>BB</th><th>TD</th><th>TFU</th><th>Catatan</th><th></th></tr></thead>
+          <tbody id="ancBody"></tbody>
+        </table>
+      </div>
+
+      <h3>👶 Catatan Persalinan &amp; Bayi</h3>
+      <div class="kia-form">
+        <div class="gc-field"><label for="birTgl">Tanggal lahir</label><input id="birTgl" type="date"></div>
+        <div class="gc-field"><label for="birJam">Jam lahir</label><input id="birJam" type="time"></div>
+        <div class="gc-field"><label for="birMetode">Metode</label><select id="birMetode"><option value="">—</option><option>Normal (pervaginam)</option><option>Caesar (SC)</option></select></div>
+        <div class="gc-field"><label for="birPenolong">Penolong</label><input id="birPenolong" type="text" placeholder="dokter/bidan"></div>
+        <div class="gc-field"><label for="birBb">Berat lahir (gram)</label><input id="birBb" type="number" placeholder="mis. 3200"></div>
+        <div class="gc-field"><label for="birPb">Panjang lahir (cm)</label><input id="birPb" type="number" step="0.1" placeholder="mis. 49"></div>
+        <div class="gc-field"><label for="birJk">Jenis kelamin</label><select id="birJk"><option value="">—</option><option>Laki-laki</option><option>Perempuan</option></select></div>
+        <div class="gc-field"><label for="birApgar">Skor APGAR</label><input id="birApgar" type="text" placeholder="mis. 9/10"></div>
+        <div class="gc-field full"><label for="birCat">Catatan</label><textarea id="birCat" placeholder="IMD, kondisi bayi, dll"></textarea></div>
+      </div>
+      <p class="saved-note" id="kiaSaved">✓ Semua perubahan tersimpan otomatis di perangkat ini.</p>
+      <div class="gc-btns"><button id="kiaReset" class="ghost">Hapus semua catatan</button></div>
+    </section>
+
   </main>
 </div>
 </div>
@@ -1259,6 +1334,47 @@
   }
   $('ckReset').addEventListener('click',()=>{if(confirm('Reset semua centang imunisasi?')){ckState={};ckSave();ckRender();}});
   ckRender();
+
+  // ---- Buku KIA: PDF viewer (lazy) ----
+  const KIA_PDF='https://kesprimkom.kemkes.go.id/assets/uploads/contents/others/Buku_KIA_2024.pdf';
+  const kiaShow=$('kiaShow');
+  if(kiaShow)kiaShow.addEventListener('click',()=>{$('kiaViewer').innerHTML='<iframe src="'+KIA_PDF+'#view=FitH" title="Buku KIA 2024 (Kemenkes)" loading="lazy"></iframe>';kiaShow.style.display='none';});
+
+  // ---- Buku KIA digital: autosave fields ----
+  function bind(ids,key){
+    let st;try{st=JSON.parse(localStorage.getItem(key)||'{}')}catch(e){st={}}
+    ids.forEach(id=>{const el=$(id);if(!el)return;if(st[id]!=null)el.value=st[id];el.addEventListener('input',()=>{st[id]=el.value;localStorage.setItem(key,JSON.stringify(st));});});
+    return ()=>localStorage.removeItem(key);
+  }
+  const clearProfile=bind(['kiaNama','kiaGol','kiaFaskes','kiaDokter'],'kiaProfile');
+  const clearBirth=bind(['birTgl','birJam','birMetode','birPenolong','birBb','birPb','birJk','birApgar','birCat'],'kiaBirth');
+
+  // ANC visit log
+  const ancLoad=()=>{try{return JSON.parse(localStorage.getItem('kiaANC')||'[]')}catch(e){return[]}};
+  const ancSave=a=>localStorage.setItem('kiaANC',JSON.stringify(a));
+  const esc=s=>(s==null?'':String(s)).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+  function ancRender(){
+    const a=ancLoad(),tb=$('ancBody');
+    if(!a.length){tb.innerHTML='<tr><td colspan="7" class="muted">Belum ada catatan kunjungan.</td></tr>';return;}
+    tb.innerHTML=a.map((r,i)=>'<tr><td>'+esc(r.tgl)+'</td><td>'+esc(r.uk)+'</td><td>'+esc(r.bb)+'</td><td>'+esc(r.td)+'</td><td>'+esc(r.tfu)+'</td><td>'+esc(r.cat)+'</td><td><button class="anc-del" data-i="'+i+'" aria-label="Hapus">✕</button></td></tr>').join('');
+    tb.querySelectorAll('.anc-del').forEach(b=>b.addEventListener('click',()=>{const a2=ancLoad();a2.splice(+b.dataset.i,1);ancSave(a2);ancRender();}));
+  }
+  $('ancAdd').addEventListener('click',()=>{
+    const tgl=$('ancTgl').value;if(!tgl){alert('Isi tanggal kunjungan dulu.');return;}
+    const a=ancLoad();
+    a.push({tgl:tgl,uk:$('ancUk').value,bb:$('ancBb').value,td:$('ancTd').value,tfu:$('ancTfu').value,cat:$('ancCat').value});
+    a.sort((x,y)=>(x.tgl||'').localeCompare(y.tgl||''));
+    ancSave(a);ancRender();
+    ['ancUk','ancBb','ancTd','ancTfu','ancCat'].forEach(id=>$(id).value='');
+  });
+  ancRender();
+
+  $('kiaReset').addEventListener('click',()=>{
+    if(!confirm('Hapus SEMUA catatan Buku KIA digital (identitas, kunjungan, persalinan)?'))return;
+    clearProfile();clearBirth();localStorage.removeItem('kiaANC');
+    ['kiaNama','kiaGol','kiaFaskes','kiaDokter','birTgl','birJam','birMetode','birPenolong','birBb','birPb','birJk','birApgar','birCat'].forEach(id=>{const el=$(id);if(el)el.value='';});
+    ancRender();
+  });
 })();
 </script>
 

@@ -22,6 +22,7 @@
 12. [Hal yang Harus Dijaga & Diperhatikan Sehari-hari](#12-hal-yang-harus-dijaga--diperhatikan-sehari-hari)
 13. [Timeline Ringkas (Bulan ke Bulan)](#13-timeline-ringkas-bulan-ke-bulan)
 14. [Standar Bayi Sehat (WHO & Kemenkes)](#14-standar-bayi-sehat-who--kemenkes)
+15. [Buku KIA (Resmi Kemenkes)](#15-buku-kia-resmi-kemenkes)
 
 ---
 
@@ -588,6 +589,17 @@ Patokan praktis: berat lahir kembali ±2 minggu, **±2× lipat** di ~5 bulan, **
 🚨 Tidak mau menyusu / muntah semua · **kejang** atau sangat lemas · **napas cepat (≥60×/mnt)**/sesak/tarikan dinding dada · **demam (≥37,5–38°C)** atau teraba dingin (hipotermia) · **kuning** di hari pertama atau sampai telapak tangan/kaki · tali pusat **merah/bernanah/bau** / mata bernanah · diare, tidak BAK/BAB, kulit **biru/pucat**.
 
 *Sumber: WHO Child Growth Standards & rekomendasi menyusui WHO; Kemenkes RI — Buku KIA & jadwal imunisasi nasional.*
+
+---
+
+## 15. Buku KIA (Resmi Kemenkes)
+
+**Buku Kesehatan Ibu dan Anak (KIA)** edisi 2024 adalah dokumen resmi & **gratis** dari Kemenkes — berisi catatan kehamilan, grafik pertumbuhan (KMS), jadwal imunisasi, dan edukasi. Aslinya didapat **gratis di puskesmas**.
+
+- 📥 **Unduh PDF resmi:** [Buku KIA 2024 (kesprimkom.kemkes.go.id)](https://kesprimkom.kemkes.go.id/assets/uploads/contents/others/Buku_KIA_2024.pdf) (±17 MB)
+- 🌐 **Halaman resmi:** [promkes.kemkes.go.id — Buku KIA](https://promkes.kemkes.go.id/buku-kia-kesehatan-ibu-dan-anak)
+
+> 💻 **Di situs web** panduan ini sudah terintegrasi: **penampil PDF Buku KIA** + **Catatan Buku KIA Digital** (identitas ibu, catatan kunjungan ANC, catatan persalinan & bayi) yang tersimpan otomatis di browser, melengkapi **grafik pertumbuhan WHO** & **checklist imunisasi**.
 
 ---
 
