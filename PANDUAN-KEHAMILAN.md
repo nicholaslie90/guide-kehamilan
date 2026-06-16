@@ -23,6 +23,7 @@
 13. [Timeline Ringkas (Bulan ke Bulan)](#13-timeline-ringkas-bulan-ke-bulan)
 14. [Standar Bayi Sehat (WHO & Kemenkes)](#14-standar-bayi-sehat-who--kemenkes)
 15. [Buku KIA (Resmi Kemenkes)](#15-buku-kia-resmi-kemenkes)
+16. [Mitos vs Fakta Kehamilan](#16-mitos-vs-fakta-kehamilan)
 
 ---
 
@@ -659,6 +660,33 @@ Patokan praktis: berat lahir kembali ±2 minggu, **±2× lipat** di ~5 bulan, **
 - 🌐 **Halaman resmi:** [promkes.kemkes.go.id — Buku KIA](https://promkes.kemkes.go.id/buku-kia-kesehatan-ibu-dan-anak)
 
 > 💻 **Di situs web** panduan ini sudah terintegrasi: **penampil PDF Buku KIA** + **Catatan Buku KIA Digital** (identitas ibu, catatan kunjungan ANC, catatan persalinan & bayi) yang tersimpan otomatis di browser, melengkapi **grafik pertumbuhan WHO** & **checklist imunisasi**.
+
+---
+
+## 16. Mitos vs Fakta Kehamilan
+
+Banyak mitos beredar yang bikin cemas atau membatasi gizi tanpa alasan. Berikut yang umum di Indonesia + faktanya. **Bila ragu, tanyakan ke dokter/bidan.**
+
+| ❌ Mitos | ✅ Fakta |
+|---|---|
+| Bentuk perut menentukan jenis kelamin (lancip=laki, bulat=perempuan) | Ditentukan postur, otot, & posisi janin — bukan jenis kelamin. Pasti hanya via USG. |
+| Detak jantung cepat = perempuan, lambat = laki | Tidak ada hubungan detak jantung janin dengan jenis kelamin. |
+| Harus "makan untuk dua orang" | Kalori hanya naik ±300–450 kkal/hari (tri 2–3), bukan 2×. Utamakan kualitas gizi. |
+| Ngidam wajib dituruti, kalau tidak bayi "ngiler" | Ngidam = perubahan hormon/selera; tak menurutinya tidak berdampak pada bayi. |
+| Air kelapa bikin kulit bayi putih & bersih | Warna kulit = genetik; bersih saat lahir karena vernix. Air kelapa boleh, tapi tidak ajaib. |
+| Nanas/durian menyebabkan keguguran | Dalam porsi wajar tidak terbukti. Berlebihan apa pun memang dihindari. |
+| Tidak boleh berhubungan intim selama hamil | Aman bila kehamilan sehat & tanpa larangan dokter (mis. plasenta previa). |
+| Tidak boleh olahraga / harus banyak bed rest | Olahraga ringan–sedang dianjurkan bila tak ada kontraindikasi; bed rest hanya atas indikasi medis. |
+| Mengangkat tangan ke atas bikin tali pusat melilit | Gerakan ibu tidak menyebabkan lilitan tali pusat. |
+| USG sering berbahaya bagi janin | USG = gelombang suara (bukan radiasi), aman sesuai indikasi medis. |
+| Tidak boleh minum kopi sama sekali | Boleh, dibatasi ≤200 mg kafein/hari (±1–2 cangkir). |
+| Mual hebat = bayi sehat; tidak mual = bermasalah | Ada/tidaknya mual tidak menentukan kesehatan janin. Mual sampai dehidrasi perlu diperiksa. |
+| Heartburn berat = bayi berambut lebat | Korelasi hormon lemah; bukan penentu. Heartburn karena katup lambung melonggar. |
+| Stretch mark bisa dicegah 100% dengan lotion/minyak | Genetik & elastisitas kulit dominan. Pelembap membantu kenyamanan, tak menjamin. |
+| Semua seafood dilarang | Ikan rendah merkuri yang matang justru dianjurkan (DHA). Hindari tinggi merkuri & mentah. |
+| Gerhana berbahaya bagi janin | Tidak ada dasar ilmiah; ini kepercayaan budaya. |
+
+> 🧭 **Pegangan:** kalau sebuah "pantangan" membuat Anda **stres berlebihan** atau **kekurangan gizi**, cek ke tenaga kesehatan. Sumber tepercaya: dokter/bidan, Buku KIA, WHO/Kemenkes.
 
 ---
 
