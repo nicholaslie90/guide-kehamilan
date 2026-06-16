@@ -348,7 +348,19 @@ Standar minimal kontrol (idealnya lebih sering bila ada risiko):
 - **Barang khusus:** **celana dalam high-waist longgar** (tidak menekan luka), korset post-SC, baju longgar berkancing depan (memudahkan menyusui), pembalut nifas.
 
 ### Birth Plan (Rencana Persalinan) — buat & diskusikan dengan dokter
-- Preferensi metode, pereda nyeri (epidural?), siapa pendamping, IMD & rooming-in, ASI eksklusif, penundaan klem tali pusat, dll.
+**Birth plan** = selembar (±1 halaman) preferensi Anda untuk proses melahirkan & perawatan setelahnya, untuk ditunjukkan ke tim medis saat tiba di RS. **Bukan kontrak kaku** — keselamatan ibu & bayi tetap nomor satu.
+
+Isi yang biasanya dicantumkan:
+- **Identitas:** nama ibu, HPL, dokter, RS, gol. darah, alergi, BPJS/asuransi, pendamping.
+- **Pereda nyeri:** coba alami dulu (napas/gym ball/pijat) / boleh epidural / sesuai saran dokter.
+- **Proses normal:** bebas bergerak & ganti posisi, episiotomi hanya bila perlu, dokumentasi foto/video.
+- **Bila caesar:** pendamping ikut masuk (bila diizinkan), skin-to-skin di ruang operasi bila memungkinkan.
+- **Setelah lahir:** IMD/skin-to-skin ≥1 jam, penundaan klem tali pusat, siapa yang memotong tali pusat, rooming-in.
+- **ASI & bayi:** ASI eksklusif, bantuan konselor laktasi, setuju Vitamin K + imunisasi Hep B + salep mata.
+- **Catatan khusus** & **tanda tangan**.
+
+> 💻 **Di situs web** tersedia **formulir Birth Plan** yang bisa diisi/dicentang, tersimpan otomatis, lalu dicetak/disimpan sebagai **PDF** untuk dibawa ke RS.
+
 - **Tetap fleksibel** — kondisi medis bisa mengubah rencana demi keselamatan.
 
 ### ✅ Tips Persiapan Persalinan Normal

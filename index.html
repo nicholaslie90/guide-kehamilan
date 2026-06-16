@@ -277,6 +277,12 @@
   .anc-del:hover{background:var(--danger-bg)}
   .saved-note{font-size:12px;color:var(--sage-deep);font-weight:700}
 
+  /* Birth plan */
+  .bp-group{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--card);margin:10px 0}
+  .bp-group .lbl{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-soft);margin-bottom:4px}
+  .bp-opt{display:flex;align-items:flex-start;gap:9px;padding:7px 0;font-weight:600;cursor:pointer;line-height:1.4}
+  .bp-opt input{width:18px;height:18px;margin-top:1px;accent-color:var(--clay);flex:none}
+
   .sumlist{columns:2;column-gap:32px}
 
   @media (max-width:880px){
@@ -790,6 +796,65 @@
       <div class="callout warn">
         <p class="t">🎒 Untuk kedua metode</p>
         <p>Siapkan <strong>hospital bag sejak minggu 36</strong> (lihat bagian Hospital Bag), kenali tanda persalinan &amp; tanda bahaya, rencanakan transportasi ke RS, dan bahas <strong>IMD, ASI, serta KB pasca-persalinan</strong> dengan dokter.</p>
+      </div>
+    </section>
+
+    <!-- birth plan -->
+    <section class="block reveal" id="birthplan">
+      <div class="sec-head"><span class="sec-num">10</span><h2>Birth Plan (Rencana Persalinan)</h2></div>
+      <p>Selembar preferensi Anda untuk proses melahirkan &amp; perawatan setelahnya — untuk ditunjukkan ke tim medis saat tiba di RS. Isi/centang di bawah (<strong>tersimpan otomatis</strong>), lalu <strong>Cetak/Simpan PDF</strong> untuk dibawa. <span class="muted">Bukan kontrak kaku — keselamatan ibu &amp; bayi tetap nomor satu.</span></p>
+      <form id="bpForm" onsubmit="return false">
+        <h3>Identitas</h3>
+        <div class="kia-form">
+          <div class="gc-field"><label for="bpNama">Nama ibu</label><input id="bpNama" type="text" placeholder="Nama lengkap"></div>
+          <div class="gc-field"><label for="bpHpl">HPL (perkiraan lahir)</label><input id="bpHpl" type="text" value="11 Feb 2027"></div>
+          <div class="gc-field"><label for="bpDokter">Dokter</label><input id="bpDokter" type="text" value="dr. Christian Wijaya Woen, Sp.OG"></div>
+          <div class="gc-field"><label for="bpRs">Rumah sakit</label><input id="bpRs" type="text" value="RSIA Mahati / RS Tzu Chi PIK"></div>
+          <div class="gc-field"><label for="bpGol">Gol. darah</label><input id="bpGol" type="text" placeholder="mis. O+"></div>
+          <div class="gc-field"><label for="bpAlergi">Alergi</label><input id="bpAlergi" type="text" placeholder="bila ada"></div>
+          <div class="gc-field"><label for="bpAsuransi">BPJS / Asuransi</label><input id="bpAsuransi" type="text" placeholder="no. kartu"></div>
+          <div class="gc-field"><label for="bpPendamping">Pendamping persalinan</label><input id="bpPendamping" type="text" placeholder="mis. suami"></div>
+        </div>
+
+        <h3>Preferensi Persalinan</h3>
+        <div class="bp-group"><div class="lbl">Metode yang diharapkan</div>
+          <label class="bp-opt"><input type="radio" name="bpMetode" value="Normal"> Normal (pervaginam)</label>
+          <label class="bp-opt"><input type="radio" name="bpMetode" value="Caesar"> Caesar (SC)</label>
+          <label class="bp-opt"><input type="radio" name="bpMetode" value="Ikuti saran dokter"> Ikuti saran dokter</label>
+        </div>
+        <div class="bp-group"><div class="lbl">Pereda nyeri</div>
+          <label class="bp-opt"><input type="radio" name="bpNyeri" value="Coba alami dulu (napas, gym ball, pijat)"> Coba alami dulu (napas, gym ball, pijat)</label>
+          <label class="bp-opt"><input type="radio" name="bpNyeri" value="Boleh epidural bila saya minta"> Boleh epidural bila saya minta</label>
+          <label class="bp-opt"><input type="radio" name="bpNyeri" value="Sesuai saran dokter"> Sesuai saran dokter</label>
+        </div>
+        <div class="bp-group"><div class="lbl">Selama proses</div>
+          <label class="bp-opt"><input type="checkbox" id="bpGerak"> Ingin bebas bergerak/ganti posisi (bila aman)</label>
+          <label class="bp-opt"><input type="checkbox" id="bpEpis"> Episiotomi hanya bila benar-benar diperlukan</label>
+          <label class="bp-opt"><input type="checkbox" id="bpFoto"> Boleh dokumentasi foto</label>
+          <label class="bp-opt"><input type="checkbox" id="bpVideo"> Boleh dokumentasi video</label>
+        </div>
+        <div class="bp-group"><div class="lbl">Bila harus caesar</div>
+          <label class="bp-opt"><input type="checkbox" id="bpSCpend"> Pendamping ikut masuk bila diizinkan</label>
+          <label class="bp-opt"><input type="checkbox" id="bpSCskin"> Skin-to-skin di ruang operasi bila memungkinkan</label>
+        </div>
+        <div class="bp-group"><div class="lbl">Setelah bayi lahir</div>
+          <label class="bp-opt"><input type="checkbox" id="bpIMD"> IMD / skin-to-skin minimal 1 jam</label>
+          <label class="bp-opt"><input type="checkbox" id="bpKlem"> Penundaan klem tali pusat</label>
+          <label class="bp-opt"><input type="checkbox" id="bpRooming"> Rooming-in (bayi sekamar dengan ibu)</label>
+          <div class="gc-field" style="margin-top:8px"><label for="bpPotong">Yang memotong tali pusat</label><input id="bpPotong" type="text" placeholder="mis. suami" style="width:100%;font-family:'Mulish';font-size:15px;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:var(--card)"></div>
+        </div>
+        <div class="bp-group"><div class="lbl">ASI &amp; perawatan bayi</div>
+          <label class="bp-opt"><input type="checkbox" id="bpASI"> ASI eksklusif (hindari sufor/dot kecuali indikasi medis)</label>
+          <label class="bp-opt"><input type="checkbox" id="bpLaktasi"> Minta bantuan konselor laktasi</label>
+          <label class="bp-opt"><input type="checkbox" id="bpVitK"> Setuju Vitamin K, imunisasi Hep B, salep mata</label>
+        </div>
+        <h3>Catatan khusus</h3>
+        <div class="kia-form"><div class="gc-field full"><label for="bpCatatan">Hal lain / kekhawatiran</label><textarea id="bpCatatan" placeholder="mis. preferensi posisi, kekhawatiran tertentu, dll"></textarea></div></div>
+      </form>
+      <p class="saved-note">✓ Semua isian tersimpan otomatis di perangkat ini.</p>
+      <div class="gc-btns"><button id="bpPrint">🖨️ Cetak / simpan PDF</button><button id="bpReset" class="ghost">Reset</button></div>
+      <div class="callout warn" style="margin-top:14px">
+        <p>💬 <strong>Diskusikan dulu dengan dr. Christian</strong> saat kontrol agar realistis dengan kebijakan RS. Cetak 2–3 lembar: untuk Anda, pendamping, dan diserahkan ke perawat/bidan saat tiba.</p>
       </div>
     </section>
 
@@ -1458,6 +1523,64 @@
     ['kiaNama','kiaGol','kiaFaskes','kiaDokter','birTgl','birJam','birMetode','birPenolong','birBb','birPb','birJk','birApgar','birCat'].forEach(id=>{const el=$(id);if(el)el.value='';});
     ancRender();
   });
+
+  // ---- Birth Plan (autosave + print) ----
+  (function(){
+    const form=$('bpForm');if(!form)return;
+    let bp;try{bp=JSON.parse(localStorage.getItem('birthPlan')||'{}')}catch(e){bp={}}
+    form.querySelectorAll('input,select,textarea').forEach(el=>{
+      if(el.type==='radio'){if(bp[el.name]===el.value)el.checked=true;}
+      else if(el.type==='checkbox'){if(bp[el.id])el.checked=true;}
+      else {if(bp[el.id]!=null&&bp[el.id]!=='')el.value=bp[el.id];}
+    });
+    function save(e){const el=e.target;if(!el)return;
+      if(el.type==='radio')bp[el.name]=el.value;
+      else if(el.type==='checkbox')bp[el.id]=el.checked;
+      else if(el.id)bp[el.id]=el.value; else return;
+      localStorage.setItem('birthPlan',JSON.stringify(bp));}
+    form.addEventListener('input',save);form.addEventListener('change',save);
+    const G=id=>{const e=$(id);return e?String(e.value).trim():'';};
+    const C=id=>$(id)&&$(id).checked?'☑':'☐';
+    const R=n=>{const e=document.querySelector('input[name="'+n+'"]:checked');return e?e.value:'—';};
+    const ex=s=>(s==null?'':String(s)).replace(/[&<>]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]));
+    $('bpPrint').addEventListener('click',()=>{
+      const html='<!doctype html><html lang="id"><head><meta charset="utf-8"><title>Rencana Persalinan (Birth Plan)</title><style>body{font-family:Arial,Helvetica,sans-serif;margin:28px;color:#222;line-height:1.5}h1{font-size:19px;margin:0 0 10px}h2{font-size:14px;margin:16px 0 4px;border-bottom:1px solid #ccc;padding-bottom:3px}.row{font-size:13px;margin:2px 0}.foot{font-size:11px;color:#666;margin-top:18px}@media print{.noprint{display:none}}</style></head><body>'
+        +'<h1>Rencana Persalinan (Birth Plan)</h1>'
+        +'<div class="row"><b>Nama ibu:</b> '+ex(G('bpNama'))+' &nbsp; <b>HPL:</b> '+ex(G('bpHpl'))+'</div>'
+        +'<div class="row"><b>Dokter:</b> '+ex(G('bpDokter'))+'</div>'
+        +'<div class="row"><b>Rumah sakit:</b> '+ex(G('bpRs'))+'</div>'
+        +'<div class="row"><b>Gol. darah:</b> '+ex(G('bpGol')||'-')+' &nbsp; <b>Alergi:</b> '+ex(G('bpAlergi')||'-')+' &nbsp; <b>BPJS/Asuransi:</b> '+ex(G('bpAsuransi')||'-')+'</div>'
+        +'<div class="row"><b>Pendamping:</b> '+ex(G('bpPendamping')||'-')+'</div>'
+        +'<h2>Preferensi Persalinan</h2>'
+        +'<div class="row">Metode diharapkan: <b>'+ex(R('bpMetode'))+'</b></div>'
+        +'<div class="row">Pereda nyeri: <b>'+ex(R('bpNyeri'))+'</b></div>'
+        +'<div class="row">'+C('bpGerak')+' Bebas bergerak/ganti posisi (bila aman)</div>'
+        +'<div class="row">'+C('bpEpis')+' Episiotomi hanya bila benar-benar perlu</div>'
+        +'<div class="row">'+C('bpFoto')+' Boleh dokumentasi foto &nbsp; '+C('bpVideo')+' Boleh video</div>'
+        +'<h2>Bila Harus Caesar</h2>'
+        +'<div class="row">'+C('bpSCpend')+' Pendamping ikut masuk bila diizinkan</div>'
+        +'<div class="row">'+C('bpSCskin')+' Skin-to-skin di ruang operasi bila memungkinkan</div>'
+        +'<h2>Setelah Bayi Lahir</h2>'
+        +'<div class="row">'+C('bpIMD')+' IMD / skin-to-skin minimal 1 jam</div>'
+        +'<div class="row">'+C('bpKlem')+' Penundaan klem tali pusat</div>'
+        +'<div class="row">'+C('bpRooming')+' Rooming-in (bayi sekamar dengan ibu)</div>'
+        +'<div class="row">Yang memotong tali pusat: <b>'+ex(G('bpPotong')||'-')+'</b></div>'
+        +'<h2>ASI &amp; Perawatan Bayi</h2>'
+        +'<div class="row">'+C('bpASI')+' ASI eksklusif (hindari sufor/dot kecuali indikasi medis)</div>'
+        +'<div class="row">'+C('bpLaktasi')+' Minta bantuan konselor laktasi</div>'
+        +'<div class="row">'+C('bpVitK')+' Setuju Vitamin K, imunisasi Hep B, salep mata</div>'
+        +'<h2>Catatan Khusus</h2><div class="row">'+ex(G('bpCatatan')||'-')+'</div>'
+        +'<p class="foot">Rencana ini fleksibel — saya mengikuti keputusan medis demi keselamatan ibu &amp; bayi.<br>Tanda tangan ibu: ____________ &nbsp; Tanggal: __________</p>'
+        +'<button class="noprint" onclick="window.print()" style="margin-top:10px;padding:9px 18px;cursor:pointer">Cetak / Simpan sebagai PDF</button></body></html>';
+      const w=window.open('','_blank');if(!w){alert('Izinkan pop-up untuk mencetak / menyimpan PDF.');return;}
+      w.document.write(html);w.document.close();w.focus();setTimeout(()=>{try{w.print()}catch(e){}},400);
+    });
+    $('bpReset').addEventListener('click',()=>{
+      if(!confirm('Reset semua isian Birth Plan?'))return;
+      localStorage.removeItem('birthPlan');
+      form.querySelectorAll('input,select,textarea').forEach(el=>{if(el.type==='radio'||el.type==='checkbox')el.checked=false;else el.value=el.defaultValue;});
+    });
+  })();
 })();
 </script>
 
